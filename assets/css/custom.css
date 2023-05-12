@@ -67,6 +67,7 @@ html {
   color: #ffffff;
   background-color: #f79328;
   transition: all 0.5s;
+  outline: none;
 }
 .btn__custom:hover {
   background-color: #f9a953;
@@ -650,10 +651,8 @@ html {
   border-radius: 0.9rem;
 }
 .Card__container .card::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #f79328);
   opacity: 0.1;
   border-radius: 0.9rem;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .Card__container .card .card-head h2 {
@@ -701,10 +700,9 @@ html {
   border-radius: 0.9rem;
 }
 .Card__container .service__card::-webkit-scrollbar-thumb {
-  background-color: #f79328;
+  background-color: none;
   opacity: 0.1;
   border-radius: 0.9rem;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .Card__container .service__card1,
@@ -896,6 +894,7 @@ html {
 @media only screen and (max-width: 768px) {
   .Card__container {
     margin-top: 5rem;
+    margin-bottom: 18rem;
     width: 100%;
   }
   .Card__container .card {

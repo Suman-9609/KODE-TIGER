@@ -47,55 +47,54 @@ html {
 }
 
 //animation css
-  /* ----- keyframes animation ----- */
-  @keyframes moveLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-
-    80% {
-      transform: translateX(2rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+/* ----- keyframes animation ----- */
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
   }
 
-  // move right
-  @keyframes moveRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem);
-    }
-
-    80% {
-      transform: translateX(-2rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+  80% {
+    transform: translateX(2rem);
   }
 
-  // mixing scss
-  @mixin btn__custom() {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: $primary-color;
-    transition: all 0.5s;
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
-    &:hover {
-      background-color: #f9a953;
-    }
+// move right
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
   }
 
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// mixing scss
+@mixin btn__custom() {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $primary-color;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #f9a953;
+  }
+}
 
 // display text css
 #more {
@@ -104,10 +103,8 @@ html {
 
 .btn__custom {
   @include btn__custom();
+  outline: none;
 }
-
-
-
 
 
 //   main structure css
@@ -293,6 +290,9 @@ html {
     justify-content: space-between;
     padding: 0 10px;
   }
+
+  // read more button css
+
 }
 
 /*
@@ -509,8 +509,6 @@ html {
   }
 }
 
-
-
 /*
 --------------------------------------------------------------------
  Right side css
@@ -589,7 +587,6 @@ html {
       border-right: none;
     }
   }
-
 
   // project card css
   .project__card__container {
@@ -783,10 +780,10 @@ html {
     }
 
     &::-webkit-scrollbar-thumb {
-      background: linear-gradient(transparent, $primary-color);
+      // background: linear-gradient(transparent, $primary-color);
       opacity: 0.1;
       border-radius: 0.9rem;
-      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+      // box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
       cursor: pointer;
     }
 
@@ -852,10 +849,10 @@ html {
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: $primary-color;
+      background-color: none;
       opacity: 0.1;
       border-radius: 0.9rem;
-      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+      // box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
       cursor: pointer;
     }
   }
@@ -917,7 +914,7 @@ html {
 // contact page css
 .contact__form__container {
   animation-name: moveLeft;
-  animation-duration:2s;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
 
   .card {
@@ -1057,6 +1054,7 @@ html {
 @media only screen and (max-width: 768px) {
   .Card__container {
     margin-top: 5rem;
+    margin-bottom: 18rem;
     width: 100%;
 
     .card {
