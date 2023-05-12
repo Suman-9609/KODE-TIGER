@@ -55,11 +55,36 @@ html {
     transform: translate(0);
   }
 }
+@keyframes moveBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    background-color: #f79328;
+  }
+}
 #more {
   display: none;
 }
 
-.btn__custom {
+.readMorebtn__custom {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.4rem;
@@ -67,9 +92,11 @@ html {
   color: #ffffff;
   background-color: #f79328;
   transition: all 0.5s;
-  outline: none;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
-.btn__custom:hover {
+.readMorebtn__custom:hover {
   background-color: #f9a953;
 }
 
@@ -156,6 +183,9 @@ html {
 }
 .leftSide .time {
   margin-top: 6rem;
+}
+.leftSide .date {
+  margin: 1rem auto;
 }
 .leftSide span {
   display: none;
@@ -468,6 +498,9 @@ html {
   padding: 0;
   display: flex;
   justify-content: center;
+  animation-name: moveBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 .main__head ul li {
   list-style: none;

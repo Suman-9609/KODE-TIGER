@@ -34,50 +34,76 @@
                   Kode Tiger ("we", "us", or "our") operates the Kode Tiger Software Development Company website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service. We will not use or share your information with anyone except as described in this Privacy Policy.
                 </p>
                 <p class="card-text">
-                  We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
+                  We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.<span id="dots">...</span>
                 </p>
-                <h5 class="card-title fw-bolder fs-3">Information Collection and Use</h5>
-                <p class="card-text">
-                  While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information ("Personal Information") may include, but is not limited to:
-                <ul>
-                  <li>Name</li>
-                  <li>Email Address</li>
-                  <li>Mobile / WhatsApp Number</li>
-                </ul>
-                </p>
-                <h5 class="card-title fw-bolder fs-3">Data Collection</h5>
-                <p class="card-text">We collect information for the following purposes:
-                <ul>
-                  <li>To provide and maintain our Service</li>
-                  <li>To improve the functionality and user experience of our Service</li>
-                  <li>To process payments for any products or services offered</li>
-                </ul>
-                </p>
-                <h5 class="card-title fw-bolder fs-3">Data Sharing and Storage</h5>
-                <p class="card-text">We may store and share your Personal Information with third-party service providers to perform tasks assigned by us and to provide the Service. These third parties have access to your Personal Information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+                <span id="more">
+                  <h5 class="card-title fw-bolder fs-3">Information Collection and Use</h5>
+                  <p class="card-text">
+                    While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information ("Personal Information") may include, but is not limited to:
+                  <ul>
+                    <li>Name</li>
+                    <li>Email Address</li>
+                    <li>Mobile / WhatsApp Number</li>
+                  </ul>
+                  </p>
 
-                <h5 class="card-title fw-bolder fs-3">Third-Party Services</h5>
-                <p class="card-text">We use third-party services for payment processing. We will not store or collect your payment card details. Payment information is provided directly to our third-party payment processors whose use of your personal information is governed by their own Privacy Policy.</p>
+                  <h5 class="card-title fw-bolder fs-3">Data Collection</h5>
+                  <p class="card-text">We collect information for the following purposes:
+                  <ul>
+                    <li>To provide and maintain our Service</li>
+                    <li>To improve the functionality and user experience of our Service</li>
+                    <li>To process payments for any products or services offered</li>
+                  </ul>
+                  </p>
+                  <h5 class="card-title fw-bolder fs-3">Data Sharing and Storage</h5>
+                  <p class="card-text">We may store and share your Personal Information with third-party service providers to perform tasks assigned by us and to provide the Service. These third parties have access to your Personal Information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
 
-                <h5 class="card-title fw-bolder fs-3">Children's Privacy</h5>
-                <p class="card-text">Our Service is not specifically directed at children under 13, but they may access and use our website. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with Personal Information, please contact us. If we discover that a child under 13 has provided us with Personal Information, we will take steps to remove such information from our systems.</p>
+                  <h5 class="card-title fw-bolder fs-3">Third-Party Services</h5>
+                  <p class="card-text">We use third-party services for payment processing. We will not store or collect your payment card details. Payment information is provided directly to our third-party payment processors whose use of your personal information is governed by their own Privacy Policy.</p>
 
-                <h5 class="card-title fw-bolder fs-3">Security</h5>
-                <p class="card-text">The security of your Personal Information is important to us. We have implemented appropriate security measures to protect your information from unauthorized access, use, disclosure, alteration, or destruction. However, please be aware that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to protect your Personal Information, we cannot guarantee its absolute security.</p>
+                  <h5 class="card-title fw-bolder fs-3">Children's Privacy</h5>
+                  <p class="card-text">Our Service is not specifically directed at children under 13, but they may access and use our website. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with Personal Information, please contact us. If we discover that a child under 13 has provided us with Personal Information, we will take steps to remove such information from our systems.</p>
 
-                <h5 class="card-title fw-bolder fs-3">User Rights</h5>
-                <p class="card-text">You have the right to access, rectify, erase, or object to the processing of your Personal Information. If you wish to exercise any of these rights, please contact us at [insert contact email]. We will take reasonable steps to respond to your request in a timely manner.</p>
+                  <h5 class="card-title fw-bolder fs-3">Security</h5>
+                  <p class="card-text">The security of your Personal Information is important to us. We have implemented appropriate security measures to protect your information from unauthorized access, use, disclosure, alteration, or destruction. However, please be aware that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to protect your Personal Information, we cannot guarantee its absolute security.</p>
 
-                <h5 class="card-title fw-bolder fs-3">Changes to This Privacy Policy</h5>
-                <p class="card-text">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                  <h5 class="card-title fw-bolder fs-3">User Rights</h5>
+                  <p class="card-text">You have the right to access, rectify, erase, or object to the processing of your Personal Information. If you wish to exercise any of these rights, please contact us at [insert contact email]. We will take reasonable steps to respond to your request in a timely manner.</p>
 
-                <h5 class="card-title fw-bolder fs-3">Contact Us</h5>
-                <p class="card-text">If you have any questions about this Privacy Policy, please contact us at "contact@kodetiger.io".</p>
+                  <h5 class="card-title fw-bolder fs-3">Changes to This Privacy Policy</h5>
+                  <p class="card-text">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
 
+                  <h5 class="card-title fw-bolder fs-3">Contact Us</h5>
+                  <p class="card-text">If you have any questions about this Privacy Policy, please contact us at "contact@kodetiger.io".</p>
+                </span>
+                <div class="readmore_btn_container position-absolute d-block mb-5">
+                  <button class="btn readMorebtn__custom" id="read" onclick="read()"> <i class="fa fa-arrow-down" id="readIcon"></i> </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <script>
+          var i = 0;
+
+          function read() {
+
+            if (!i) {
+              document.getElementById('more').style.display = 'inline';
+              document.getElementById('dots').style.display = 'none';
+              document.getElementById('readIcon').classList.remove('fa-arrow-down');
+              document.getElementById('readIcon').classList.add('fa-arrow-up');
+              i = 1;
+            } else {
+              document.getElementById('more').style.display = 'none';
+              document.getElementById('dots').style.display = 'inline';
+              document.getElementById('readIcon').classList.remove('fa-arrow-up');
+              document.getElementById('readIcon').classList.add('fa-arrow-down');
+              i = 0;
+            }
+
+          }
+        </script>
         <!-- imgae -->
         <div class="col-md-4 col-sm-12 col-xs-12">
           <div class="rightImage privacy_policy_image">

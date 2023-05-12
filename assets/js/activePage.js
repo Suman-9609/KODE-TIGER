@@ -32,7 +32,7 @@ if (activePage === '/KODE-TIGER/service.php') {
     icon4.classList.add('fa-regular');
 }
 
-if (activePage === '/KODE-TIGER/project.php') {
+if (activePage === '/KODE-TIGER/blog.php') {
     const icon1 = document.getElementById('sideIcon1');
     const icon2 = document.getElementById('sideIcon2');
     const icon3 = document.getElementById('sideIcon3');

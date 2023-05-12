@@ -1,4 +1,7 @@
-<?php include('./inc/header.php'); ?>
+<?php 
+$title = "Services";
+include('./inc/header.php'); 
+?>
 
 <!-- left side -->
 <?php include('./inc/leftSide.php'); ?>

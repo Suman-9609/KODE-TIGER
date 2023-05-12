@@ -81,6 +81,38 @@ html {
   }
 }
 
+// mode down
+@keyframes moveBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// blinking
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    background-color: $primary-color;
+	}
+}
+
 // mixing scss
 @mixin btn__custom() {
   font-family: "Montserrat";
@@ -101,9 +133,11 @@ html {
   display: none;
 }
 
-.btn__custom {
+.readMorebtn__custom {
   @include btn__custom();
-  outline: none;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 
 
@@ -210,6 +244,10 @@ html {
     margin-top: 6rem;
   }
 
+  .date {
+    margin: 1rem auto;
+  }
+
   span {
     display: none;
   }
@@ -292,7 +330,6 @@ html {
   }
 
   // read more button css
-
 }
 
 /*
@@ -558,6 +595,9 @@ html {
     padding: 0;
     display: flex;
     justify-content: center;
+    animation-name: moveBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 
     li {
       list-style: none;

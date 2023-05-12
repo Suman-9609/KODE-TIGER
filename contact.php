@@ -1,4 +1,7 @@
-<?php include('./inc/header.php'); ?>
+<?php
+$title = "Contact us";
+include('./inc/header.php');
+?>
 
 <!-- left side -->
 <?php include('./inc/leftSide.php'); ?>

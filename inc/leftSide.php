@@ -15,7 +15,7 @@
                     <i class="fa-regular fa-folder" id="sideIcon2"></i><br>
                     SERVICES
                 </a></li>
-            <li><a href="./project.php">
+            <li><a href="./blog.php">
                     <i class="fa-regular fa-folder" id="sideIcon3"></i><br>
                     PROJECTS
                 </a></li>
@@ -24,10 +24,10 @@
                     CONTACT
                 </a></li>
         </ul>
-        <div class="time">
-            <div class="hour text-center fw-bold"> 11:54 AM </div>
-            <div class="date text-center"> 02-05-2023 </div>
-            <div class="day text-center fw-bold"> TUESDAY </div>
+        <div class="time" onload="setDate()">
+            <div class="hour text-center fw-bold fs-5" id="hour" style="letter-spacing: 0.2rem;"> 11:54 AM </div>
+            <div class="date text-center fs-5" id="date" style="letter-spacing: 0.2rem;"> 02-05-2023 </div>
+            <div class="day text-center fw-bold fs-5" id="day" style="letter-spacing: 0.2rem;"> TUESDAY </div>
         </div>
 
     </div>

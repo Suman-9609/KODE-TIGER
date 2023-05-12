@@ -1,4 +1,8 @@
-<?php include('./inc/header.php'); ?>
+<?php 
+$title = "Homepage";
+$bg = "background-image:url(./assets/images/bg.png);background-repeat: no-repeat;background-position: center;background-size: cover;";
+include('./inc/header.php'); 
+?>
 
 <!-- left side -->
 <?php include('./inc/leftSide.php'); ?>
