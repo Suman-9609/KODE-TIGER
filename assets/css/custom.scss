@@ -641,10 +641,10 @@ html {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 4rem;
-      row-gap: 2rem;
+      row-gap: 6rem;
 
       .card {
-        width: 80rem;
+        width: 90rem;
         height: auto;
         background: #404040;
         box-shadow: 7.36336px 7.36336px 11.045px rgba(65, 65, 65, 0.25);
@@ -746,6 +746,8 @@ html {
 // Right side responsive css
 @media only screen and (max-width: 768px) {
   .main__head {
+    margin-top: 7rem;
+    
     h1 {
       font-size: 6rem;
     }
@@ -784,6 +786,16 @@ html {
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  .main__head {
+    margin-top: 6rem;
+  }
+
+  .aside {
+    height: 70vh;
   }
 }
 

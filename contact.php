@@ -1,5 +1,6 @@
 <?php
 $title = "Contact us";
+$bg = "background-image:url(./assets/images/bg.png);background-repeat: no-repeat;background-position: center;background-size: cover;";
 include('./inc/header.php');
 ?>
 
