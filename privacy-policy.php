@@ -1,5 +1,5 @@
 <?php 
-$title = "Privacy-Policy";
+$title = "Kode Tiger - Privacy-Policy";
 include('./inc/header.php'); 
 ?>
 

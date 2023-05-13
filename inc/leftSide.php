@@ -17,7 +17,7 @@
                 </a></li>
             <li><a href="./blog.php">
                     <i class="fa-regular fa-folder" id="sideIcon3"></i><br>
-                    PROJECTS
+                    BLOG
                 </a></li>
             <li><a href="./contact.php">
                     <i class="fa-regular fa-folder" id="sideIcon4"></i><br>

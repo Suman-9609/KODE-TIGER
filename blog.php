@@ -1,5 +1,5 @@
 <?php 
-$title = "Blog";
+$title = "Kode Tiger - Blog";
 include('./inc/header.php'); 
 ?>
 

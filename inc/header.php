@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicons -->
-    <link href="./assets/images/logo.png" sizes="32x32" rel="apple-touch-icon">
+    <link href="assets/images/logo.png" rel="icon">
+    <link href="assets/images/logo.png" rel="apple-touch-icon">
     <!-- aos css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font awesome -->
