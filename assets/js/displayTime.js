@@ -24,14 +24,14 @@ function setDate() {
     min = (min < 10) ? "0" + min : min;
     sec = (sec < 10) ? "0" + sec : sec;
 
-    let time = hour + ":" + min + ":" + sec + " " + session;
+    let time = hour + ":" + min + ":" + sec // + " " + session;
     DateResult.innerText = time;
     let t = setTimeout(function() {setDate()},1000);
 
     d = (d < 10) ? "0" + d : d;
     m = (m < 10) ? "0" + m : m;
     
-    document.getElementById('date').innerText = d + " " + m + " " + y;
+    document.getElementById('date').innerText = d + "-" + m + "-" + y;
     document.getElementById('day').innerText = dayList[day];
 }
 

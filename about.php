@@ -1,5 +1,6 @@
 <?php
 $title = "Kode Tiger - About us";
+$bg = "background-image:url(./assets/images/bg2.png);background-repeat: no-repeat;background-position: center;background-size: cover;";
 include('./inc/header.php');
 ?>
 

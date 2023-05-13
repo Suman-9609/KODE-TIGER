@@ -84,20 +84,16 @@ html {
   display: none;
 }
 
+.readmore_btn_container {
+  left: 50%;
+}
+
 .readMorebtn__custom {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #f79328;
-  transition: all 0.5s;
+  font-size: 2rem;
+  text-align: center;
   animation-name: pulse;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-}
-.readMorebtn__custom:hover {
-  background-color: #f9a953;
 }
 
 .x__container {
@@ -177,9 +173,14 @@ html {
   font-weight: 500;
   letter-spacing: 0.18em;
   color: #404040;
+  transition: all 0.5s;
 }
 .leftSide ul li a i {
   font-size: 3rem;
+  transition: all 0.5s;
+}
+.leftSide ul li a:hover i {
+  transform: translateY(-10px);
 }
 .leftSide .time {
   margin-top: 6rem;
@@ -251,6 +252,9 @@ html {
     justify-content: space-between;
     padding: 0 10px;
   }
+  body {
+    background-size: 150% 80% !important;
+  }
 }
 /*
 ------------------------------------------------------
@@ -281,9 +285,14 @@ html {
   color: #fff;
   margin-right: 1.8rem;
   transition: all 0.5s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .social__icon a i:hover {
   background-color: #404040;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.social__icon a i:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (min-width: 768px) {
@@ -430,10 +439,14 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #f79328;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
 }
+.contact__form .card .card__body .btn__custom:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
 .contact__form .card .card__body .btn__custom:hover {
-  background-color: #f9a953;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact__form.showcontact {
@@ -679,6 +692,7 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: transparent;
 }
 .Card__container .card {
   width: 80%;
@@ -686,6 +700,7 @@ html {
   padding: 1rem;
   border: none;
   overflow-y: scroll;
+  background-color: transparent;
 }
 .Card__container .card::-webkit-scrollbar {
   width: 0.1rem;
@@ -773,6 +788,7 @@ html {
 }
 .service__tab .tab i {
   font-size: 2.5rem;
+  transition: all 0.5s;
 }
 .service__tab .tab .tab__content {
   background-color: #f79328;
@@ -794,6 +810,9 @@ html {
 }
 .service__tab .tab .fa-solid {
   color: #f79328;
+}
+.service__tab .tab:hover i {
+  transform: translateY(-10px);
 }
 
 .contact__form__container {
@@ -826,8 +845,8 @@ html {
 .contact__form__container .card .card__body input[type=text],
 .contact__form__container .card .card__body select,
 .contact__form__container .card .card__body textarea {
-  padding: 1rem 0.9rem;
-  font-size: 1.8rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.75rem;
   border: 0.633849px solid #d1d1d1;
   border-radius: 1.2rem;
 }
@@ -865,10 +884,14 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #f79328;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
 }
+.contact__form__container .card .card__body .btn__custom:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
 .contact__form__container .card .card__body .btn__custom:hover {
-  background-color: #f9a953;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .contact__form__container .footer {
   display: none;

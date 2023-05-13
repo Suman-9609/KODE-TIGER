@@ -38,7 +38,7 @@
                                     <p class="card-text">We recognize the importance of staying at the forefront of the rapidly evolving technological landscape, which is why we invest heavily in research and development. By doing so, Kode Tiger remains a pioneer in emerging technologies, continually pushing the boundaries of what's possible in the digital realm. Our focus on customer satisfaction and long-term success has garnered numerous accolades, solidifying our reputation as a reliable and innovative technology partner.</p>
                                 </span>
                                 <div class="readmore_btn_container position-absolute d-block mb-5">
-                                    <button class="btn readMorebtn__custom" id="read" onclick="read()"> <i class="fa fa-arrow-down" id="readIcon"></i> </button>
+                                    <button class="btn readMorebtn__custom" id="read" onclick="read()"> <i class="fa-solid fa-angle-down" id="readIcon"></i> </button>
                                 </div>
                             </div>
                         </div>
@@ -53,14 +53,14 @@
                         if (!i) {
                             document.getElementById('more').style.display = 'inline';
                             document.getElementById('dots').style.display = 'none';
-                            document.getElementById('readIcon').classList.remove('fa-arrow-down');
-                            document.getElementById('readIcon').classList.add('fa-arrow-up');
+                            document.getElementById('readIcon').classList.remove('fa-angle-down');
+                            document.getElementById('readIcon').classList.add('fa-angle-up');
                             i = 1;
                         } else {
                             document.getElementById('more').style.display = 'none';
                             document.getElementById('dots').style.display = 'inline';
-                            document.getElementById('readIcon').classList.remove('fa-arrow-up');
-                            document.getElementById('readIcon').classList.add('fa-arrow-down');
+                            document.getElementById('readIcon').classList.remove('fa-angle-up');
+                            document.getElementById('readIcon').classList.add('fa-angle-down');
                             i = 0;
                         }
 

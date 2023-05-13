@@ -29,7 +29,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-text">
-                                    We are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
+                                <span style="border-left:4px solid #f79328; padding-left: 3px;">We</span> are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
                                 </div>
 
                                 <div class="card-text">
@@ -55,7 +55,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-text">
-                                    We are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
+                                <span style="border-left:4px solid #f79328; padding-left: 3px;">We</span> are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
                                 </div>
 
                                 <div class="card-text">
@@ -81,7 +81,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-text">
-                                    We are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
+                                <span style="border-left:4px solid #f79328; padding-left: 3px;">We</span> are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
                                 </div>
 
                                 <div class="card-text">
@@ -107,7 +107,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-text">
-                                    We are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
+                                <span style="border-left:4px solid #f79328; padding-left: 3px;">We</span> are a software development company, we specialize in helping organization navigate their digital transformation journey and build software solutions, custom tools to solve business challenges and enable them to scale up.
                                 </div>
 
                                 <div class="card-text">
