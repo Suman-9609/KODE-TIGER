@@ -395,7 +395,7 @@ html {
 .contact__form .card .card__body select,
 .contact__form .card .card__body textarea {
   padding: 1rem 0.9rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .contact__form .card .card__body input[type=text]::-moz-placeholder, .contact__form .card .card__body select::-moz-placeholder, .contact__form .card .card__body textarea::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -419,7 +419,7 @@ html {
   padding: 1rem 0.9rem;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
   color: rgba(64, 64, 64, 0.6);
 }
@@ -827,7 +827,7 @@ html {
 .contact__form__container .card .card__body select,
 .contact__form__container .card .card__body textarea {
   padding: 1rem 0.9rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   border: 0.633849px solid #d1d1d1;
   border-radius: 1.2rem;
 }
