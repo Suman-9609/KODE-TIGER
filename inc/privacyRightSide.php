@@ -77,7 +77,7 @@
                   <p class="card-text">If you have any questions about this Privacy Policy, please contact us at "contact@kodetiger.io".</p>
                 </span>
                 <div class="readmore_btn_container position-absolute d-block mb-5">
-                  <button class="btn readMorebtn__custom" id="read" onclick="read()"> <i class="fa fa-arrow-down" id="readIcon"></i> </button>
+                  <button class="btn readMorebtn__custom" id="read" onclick="read()"> <i class="fa-solid fa-angle-down" id="readIcon"></i> </button>
                 </div>
               </div>
             </div>
@@ -91,14 +91,14 @@
             if (!i) {
               document.getElementById('more').style.display = 'inline';
               document.getElementById('dots').style.display = 'none';
-              document.getElementById('readIcon').classList.remove('fa-arrow-down');
-              document.getElementById('readIcon').classList.add('fa-arrow-up');
+              document.getElementById('readIcon').classList.remove('a-angle-down');
+              document.getElementById('readIcon').classList.add('a-angle-up');
               i = 1;
             } else {
               document.getElementById('more').style.display = 'none';
               document.getElementById('dots').style.display = 'inline';
-              document.getElementById('readIcon').classList.remove('fa-arrow-up');
-              document.getElementById('readIcon').classList.add('fa-arrow-down');
+              document.getElementById('readIcon').classList.remove('a-angle-up');
+              document.getElementById('readIcon').classList.add('a-angle-down');
               i = 0;
             }
 

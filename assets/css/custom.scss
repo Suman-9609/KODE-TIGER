@@ -122,7 +122,7 @@ html {
   color: #ffffff;
   background-color: $primary-color;
   box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s;
+  transition: all 0.3s;
 
   &:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -384,11 +384,12 @@ html {
       align-items: center;
       color: #fff;
       margin-right: 1.8rem;
-      transition: all 0.5s;
+      transition: all 0.3s;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 
       &:hover {
         background-color: #404040;
+        transform: scale(0.99);
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
       }
 
@@ -679,6 +680,7 @@ html {
         box-shadow: 7.36336px 7.36336px 11.045px rgba(65, 65, 65, 0.25);
         border-radius: 22.0901px;
         padding: 1.5rem;
+        transition: all 0.5s;
 
         .card-body {
           color: #fff;
@@ -702,6 +704,11 @@ html {
             text-transform: capitalize;
             color: #ffffff;
           }
+        }
+
+        &:hover {
+          transform: scale(0.99);
+          box-shadow: 2.36336px 3.36336px 2.045px rgba(65, 65, 65, 0.25);
         }
       }
     }
