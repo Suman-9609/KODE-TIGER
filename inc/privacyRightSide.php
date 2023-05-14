@@ -1,13 +1,16 @@
 <div class="">
   <!-- mobile view -->
   <div class="mobile_view">
-    <div class="mobile__view__logo__container">
-      <a href="./index.php"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
+        <div class="mobile__view__logo__container">
+            <a href="./index.php"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
+        </div>
+        <ul class="page__link">
+           <li><a href="./about.php">About Us</a></li>
+           <li><a href="./service.php">Services</a></li>
+           <li><a href="./blog.php">Blog</a></li>
+           <li><a href="./contact.php">Contact Us</a></li>
+        </ul>
     </div>
-    <div class="">
-      <i class="fas fa-bars" id="showMenuBtn"></i>
-    </div>
-  </div>
 
   <!-- social icon -->
   <div class="social__icon">
@@ -34,9 +37,9 @@
                   Kode Tiger ("we", "us", or "our") operates the Kode Tiger Software Development Company website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service. We will not use or share your information with anyone except as described in this Privacy Policy.
                 </p>
                 <p class="card-text">
-                  We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.<span id="dots">...</span>
+                  We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
                 </p>
-                <span id="more">
+                <span id="">
                   <h5 class="card-title fw-bolder fs-3">Information Collection and Use</h5>
                   <p class="card-text">
                     While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information ("Personal Information") may include, but is not limited to:
@@ -76,14 +79,14 @@
                   <h5 class="card-title fw-bolder fs-3">Contact Us</h5>
                   <p class="card-text">If you have any questions about this Privacy Policy, please contact us at "contact@kodetiger.io".</p>
                 </span>
-                <div class="readmore_btn_container position-absolute d-block mb-5">
+                <!-- <div class="readmore_btn_container position-absolute d-block mb-5">
                   <button class="btn readMorebtn__custom" id="read" onclick="read()"> <i class="fa-solid fa-angle-down" id="readIcon"></i> </button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
-        <script>
+        <!-- <script>
           var i = 0;
 
           function read() {
@@ -103,7 +106,7 @@
             }
 
           }
-        </script>
+        </script> -->
         <!-- imgae -->
         <div class="col-md-4 col-sm-12 col-xs-12">
           <div class="rightImage privacy_policy_image">

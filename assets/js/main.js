@@ -1,6 +1,4 @@
-const showMenuBtn = document.getElementById('showMenuBtn');
-const hideMenuBtn = document.getElementById('hideMenuBtn');
-const leftSide = document.querySelector('.leftSide');
+
 const showContactForm = document.getElementById('showContactForm');
 const contactForm = document.querySelector('.contact__form');
 const main__head = document.querySelector('.main__head');
@@ -16,15 +14,6 @@ const service__card2 = document.querySelector('.service__card2');
 const service__card3 = document.querySelector('.service__card3');
 const rightImage = document.getElementById('rightImage');
 
-showMenuBtn.addEventListener('click', () => {
-    leftSide.classList.add('show');
-    // console.log('i am clicked...');
-})
-
-hideMenuBtn.addEventListener('click', () => {
-    leftSide.classList.remove('show');
-    // console.log('hide button clicked...');
-})
 
 showContactForm.addEventListener('click', () => {
     console.log("show contact btn cliced...");
