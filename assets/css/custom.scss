@@ -96,21 +96,21 @@ html {
 
 // blinking
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     background-color: $primary-color;
-	}
+  }
 }
 
 // mixing scss
@@ -150,7 +150,6 @@ html {
   animation-timing-function: ease-out;
 }
 
-
 //   main structure css
 .x__container {
   width: 100%;
@@ -182,13 +181,12 @@ html {
 @media only screen and (max-width: 447px) {
   html {
     // font-size: 10px;
-    font-size: 85.5%;
+    font-size: 55.5%;
     transition: all 0.5s ease-in-out;
   }
 }
 
 @media only screen and (max-width: 768px) {
-
   .x__container {
     .leftSide {
       width: 36%;
@@ -213,7 +211,10 @@ html {
   transition: all 0.5s ease-in-out;
   z-index: 1;
   a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 
     .logo__container {
@@ -223,46 +224,59 @@ html {
       margin: 1.5rem 0 0 0;
 
       img {
-        width: 65%;
+        width: 100%;
       }
     }
-
   }
 
   ul {
     padding: 0;
-    margin: 2rem 0 0 0;
+    margin: 2.5rem 0 0 0;
 
     li {
       display: block;
       list-style: none;
       width: 100%;
-      margin-bottom: 1.5rem;
-      padding: 2.5rem 0;
+      margin-bottom: 1rem;
+      padding: 1rem 0;
       text-align: center;
 
       a {
         text-decoration: none;
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 0.18em;
         color: #404040;
         transition: all 0.5s;
 
         i {
-          font-size: 3rem;
+          font-size: 2.5rem;
+          width: 50px;
+          height: 50px;
+          border-radius: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           transition: all 0.5s;
         }
 
+        .fa-solid {
+          // background-color: #404040;
+          // color: $primary-color;
+          // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 10px 10px rgba(247, 147, 40, 0.6);
+        }
+
         &:hover i {
-          transform: translateY(-10px);
+          // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.6);
         }
       }
     }
   }
 
   .time {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   .date {
@@ -328,10 +342,11 @@ html {
 
 .mobile_view {
   display: none;
+  z-index: 500;
 
   .mobile__view__logo__container {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
   }
 
   i {
@@ -347,7 +362,39 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    // padding: 0 10px;
+
+    ul {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        list-style: none;
+        padding: 0 1rem;
+        border-right: 1px solid $primary-color;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          color: #404040;
+        }
+      }
+    }
   }
 
   // body image size decrease
@@ -424,7 +471,7 @@ html {
   }
 }
 
-// contact button css
+// contact button container css
 //------------------------------------------------------
 .contact__btn__container {
   width: 80%;
@@ -441,7 +488,7 @@ html {
 
   h5 {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 80%;
     height: 100%;
     display: flex;
@@ -487,13 +534,6 @@ html {
     h5 {
       font-size: 1rem;
     }
-  }
-}
-
-@media only screen and (max-width: 447px) {
-  .contact__btn__container {
-    width: 50%;
-    left: 0rem;
   }
 }
 
@@ -588,7 +628,7 @@ html {
 
 .main__head {
   width: 100%;
-  margin-top: 15rem;
+  margin-top: 10rem;
   transition: all 0.5s;
 
   h3 {
@@ -665,11 +705,11 @@ html {
   // project card css
   .project__card__container {
     width: 90%;
-    height: 71vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
-    // background-color: aquamarine;
     overflow: scroll;
+
 
     .project__card {
       display: grid;
@@ -678,7 +718,8 @@ html {
       row-gap: 6rem;
 
       .card {
-        width: 90rem;
+        // width: 90rem;
+        width: 100%;
         height: auto;
         background: #404040;
         box-shadow: 7.36336px 7.36336px 11.045px rgba(65, 65, 65, 0.25);
@@ -692,7 +733,7 @@ html {
           h4 {
             font-family: "Montserrat";
             font-weight: 700;
-            font-size: 1.8rem;
+            font-size: 2rem;
             line-height: 27px;
             text-transform: capitalize;
             color: #f79328;
@@ -702,7 +743,7 @@ html {
           .card-text {
             font-family: "Montserrat";
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             line-height: 20px;
             text-align: justify;
             text-transform: capitalize;
@@ -736,15 +777,6 @@ html {
     position: relative;
     width: 60%;
     left: 4.5rem;
-
-    h5 {
-      font-size: 1rem;
-      width: 80%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   .contact__form {
@@ -786,8 +818,8 @@ html {
 // Right side responsive css
 @media only screen and (max-width: 768px) {
   .main__head {
-    margin-top: 7rem;
-    
+    margin-top: 15rem;
+
     h1 {
       font-size: 6rem;
     }
@@ -801,12 +833,20 @@ html {
 
     .project__card__container {
       width: 100%;
+
       .project__card {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+
+        
       }
     }
   }
+
+  // .project__card__container {
+  //   width: 90%;
+  // }
+
 
   .aside {
     position: relative;
@@ -817,6 +857,7 @@ html {
     }
 
     .contact__form {
+      display: none;
       width: 90%;
       transform: translateX(0);
       margin-bottom: 2rem;
@@ -831,7 +872,30 @@ html {
 
 @media only screen and (max-width: 447px) {
   .main__head {
-    margin-top: 6rem;
+    margin-top: 15rem;
+
+    h3 {
+      font-size: 3.5rem;
+    }
+
+    ul {
+      li {
+        a {
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .project__card__container {
+
+      .project__card {
+        
+        .card {
+          width: 35rem !important;
+        }
+      }
+    }
   }
 
   .aside {
@@ -846,19 +910,17 @@ html {
 */
 .Card__container {
   width: 100%;
-  height: 100%;
+  // height: 85vh;
   display: flex;
-  align-items: center;
+  margin-top: 10rem;
   justify-content: center;
   position: relative;
   background-color: transparent;
 
   .card {
-    width: 80%;
+    width: 90%;
     border: none;
     background-color: transparent;
-
-   
 
     .card-head {
       h2 {
@@ -868,15 +930,24 @@ html {
         color: $primary-color;
         letter-spacing: 0.135em;
         margin-bottom: 1rem;
-        padding-left: 1.6rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
         animation-name: moveLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+        background-color: rgba(64, 64, 64, 0.11);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        // border: 0.5px solid #a4a4a4;
+
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
       }
     }
+
     .card-body {
-      height: 50rem;
       padding: 1.2rem 2rem;
+      width: 100%;
+      height: 80vh;
       z-index: 2;
       overflow-y: scroll;
 
@@ -885,13 +956,13 @@ html {
         // background-color: transparent;
         border-radius: 0.9rem;
       }
-  
+
       &::-webkit-scrollbar-track {
         // background-color: transparent;
         border-radius: 0.9rem;
         // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       }
-  
+
       &::-webkit-scrollbar-thumb {
         background: linear-gradient(transparent, $primary-color);
         opacity: 0.1;
@@ -928,31 +999,11 @@ html {
 // service page css
 .Card__container {
   .service__card {
-    height: 70vh;
-    // height: 40rem;
-    // overflow: scroll;
-    // background-color: aquamarine;
     transition: all 0.5s;
 
-    // &::-webkit-scrollbar {
-    //   width: 0.1rem;
-    //   background-color: transparent;
-    //   border-radius: 0.9rem;
-    // }
-
-    // &::-webkit-scrollbar-track {
-    //   background-color: transparent;
-    //   border-radius: 0.9rem;
-    //   // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    // }
-
-    // &::-webkit-scrollbar-thumb {
-    //   background-color: none;
-    //   opacity: 0.1;
-    //   border-radius: 0.9rem;
-    //   // box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-    //   cursor: pointer;
-    // }
+    .card-body {
+      height: 60vh;
+    }
   }
 
   .service__card1,
@@ -960,14 +1011,19 @@ html {
   .service__card3 {
     display: none;
     transition: all 0.8s;
+
+    .card-body {
+      height: 60vh;
+    }
   }
 }
 
 .service__tab {
   position: absolute;
-  bottom: 4%;
+  bottom: -25%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 499;
   display: flex;
 
   .tab {
@@ -980,6 +1036,12 @@ html {
 
     i {
       font-size: 2.5rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transition: all 0.5s;
     }
 
@@ -1005,11 +1067,15 @@ html {
     }
 
     .fa-solid {
+      background-color: #404040;
       color: $primary-color;
+      box-shadow: 0px 13px 15px rgba(247, 147, 40, 0.6);
+      // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
     }
 
     &:hover i {
-      transform: translateY(-10px);
+      box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.6);
+      // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
     }
   }
 }
@@ -1156,25 +1222,33 @@ html {
 // card__container responsive css
 @media only screen and (max-width: 768px) {
   .Card__container {
-    margin-top: 5rem;
-    margin-bottom: 18rem;
+    margin-top: 15rem;
+    margin-bottom: 19rem;
+    height: auto;
     width: 100%;
+    // background-color: #f9a953;
 
     .card {
       width: 100%;
       height: auto;
+
+      .card-body {
+        height: auto;
+      }
     }
 
     .service__card,
     .service__card1,
     .service__card2,
     .service__card3 {
-      height: 80vh;
+      width: 100%;
+      height: auto;
       overflow-x: auto;
     }
 
     .service__tab {
-      bottom: 12%;
+      bottom: -16%;
+      z-index: 499;
     }
   }
 
@@ -1217,6 +1291,7 @@ html {
   .rightImage {
     width: 100%;
     border-radius: 1rem;
+
     .contact__btn__container {
       display: none;
     }
@@ -1257,16 +1332,20 @@ html {
   }
 
   .Card__container {
+    margin-bottom: 23rem;
+    height: auto;
+
     .service__card,
     .service__card1,
     .service__card2,
     .service__card3 {
-      height: 70vh;
+      height: auto;
     }
   }
 
   .service__tab {
-    padding-bottom: 4rem;
+    bottom: -12% !important;
+    padding-bottom: 0;
   }
 }
 
