@@ -102,6 +102,7 @@ html {
   padding: 0;
   margin: 0;
   background-color: transparent;
+  position: relative;
 }
 .x__container .leftSide {
   width: 10%;
@@ -347,6 +348,8 @@ html {
   .social__icon {
     left: 50%;
     transform: translateX(-50%);
+    z-index: 599;
+    display: none;
   }
   .social__icon a i {
     margin-right: 1rem;
@@ -645,9 +648,42 @@ html {
   width: 85%;
   margin-right: 2rem;
 }
+.aside .mobile__social__icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25%;
+  display: none;
+}
+.aside .mobile__social__icon a {
+  display: inline-block;
+  text-decoration: none;
+}
+.aside .mobile__social__icon a i {
+  font-size: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #5d5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 1.8rem;
+  transition: all 0.3s;
+  box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
+}
+.aside .mobile__social__icon a i:hover {
+  background-color: #404040;
+  transform: scale(0.99);
+  box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
+}
+.aside .mobile__social__icon a i:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
 .aside .footer {
   position: absolute;
-  left: 40%;
+  left: 50%;
   bottom: 3rem;
   text-align: center;
 }
@@ -701,6 +737,9 @@ html {
     width: 90%;
     transform: translateX(0);
     margin-bottom: 2rem;
+  }
+  .aside .mobile__social__icon {
+    display: block;
   }
   .aside .footer {
     left: 50%;
@@ -946,6 +985,9 @@ html {
 .contact__form__container .card .card__body .btn__custom:hover {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
+.contact__form__container .mobile__social__icon {
+  display: none;
+}
 .contact__form__container .footer {
   display: none;
 }
@@ -960,6 +1002,39 @@ html {
   transition: all 0.5s;
   position: relative;
   transition: all 0.8s;
+}
+.rightImage .mobile__social__icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12%;
+  display: none;
+}
+.rightImage .mobile__social__icon a {
+  display: inline-block;
+  text-decoration: none;
+}
+.rightImage .mobile__social__icon a i {
+  font-size: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #5d5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 1.8rem;
+  transition: all 0.3s;
+  box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
+}
+.rightImage .mobile__social__icon a i:hover {
+  background-color: #404040;
+  transform: scale(0.99);
+  box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
+}
+.rightImage .mobile__social__icon a i:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .rightImage .footer {
   position: absolute;
@@ -1041,6 +1116,39 @@ html {
     width: 90%;
     height: auto;
   }
+  .contact__form__container .mobile__social__icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20%;
+    display: block;
+  }
+  .contact__form__container .mobile__social__icon a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .contact__form__container .mobile__social__icon a i {
+    font-size: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #5d5d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 1.8rem;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
+  }
+  .contact__form__container .mobile__social__icon a i:hover {
+    background-color: #404040;
+    transform: scale(0.99);
+    box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
+  }
+  .contact__form__container .mobile__social__icon a i:active {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  }
   .contact__form__container .footer {
     display: block;
     position: absolute;
@@ -1070,6 +1178,7 @@ html {
   }
   .rightImage {
     width: 100%;
+    height: 123vh;
     border-radius: 1rem;
   }
   .rightImage .contact__btn__container {
@@ -1079,6 +1188,9 @@ html {
     margin-top: 10rem;
     width: 90%;
     transform: translateX(0);
+  }
+  .rightImage .mobile__social__icon {
+    display: block;
   }
   .rightImage .footer {
     bottom: 0;
@@ -1095,7 +1207,7 @@ html {
 }
 @media only screen and (max-width: 447px) {
   .rightImage {
-    height: auto;
+    height: 110vh;
   }
   .rightImage .contact__form {
     margin-bottom: 10rem;

@@ -1,15 +1,15 @@
 <div class="">
     <!-- mobile view -->
-     <!-- mobile view -->
-     <div class="mobile_view">
+    <!-- mobile view -->
+    <div class="mobile_view">
         <div class="mobile__view__logo__container">
             <a href="./index.php"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
         </div>
         <ul class="page__link">
-           <li><a href="./about.php">About Us</a></li>
-           <li><a href="./service.php">Services</a></li>
-           <li><a href="./blog.php">Blog</a></li>
-           <li><a href="./contact.php">Contact Us</a></li>
+            <li><a href="./about.php">About Us</a></li>
+            <li><a href="./service.php">Services</a></li>
+            <li><a href="./blog.php">Blog</a></li>
+            <li><a href="./contact.php">Contact Us</a></li>
         </ul>
     </div>
 
@@ -116,6 +116,14 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+
+                        <!-- social icon for mobile -->
+                        <div class="mobile__social__icon">
+                            <a href="mailto:contact@kodetiger.io"><i class="fa fa-envelope"></i></a>
+                            <a href="https://wa.me/0000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/kodetiger/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/kodetiger" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
 
                         <!-- footer -->
