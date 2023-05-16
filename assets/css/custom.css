@@ -183,19 +183,14 @@ html {
 }
 .leftSide ul li a i {
   font-size: 2.5rem;
-  width: 50px;
-  height: 50px;
-  border-radius: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: all 0.5s;
 }
 .leftSide ul li a .fa-solid {
-  box-shadow: 0px 10px 10px rgba(247, 147, 40, 0.6);
+  color: #404040;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
-.leftSide ul li a:hover i {
-  box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.6);
+.leftSide ul li a:hover {
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
 .leftSide .time {
   margin-top: 5rem;
@@ -328,15 +323,9 @@ html {
   color: #fff;
   margin-right: 1.8rem;
   transition: all 0.3s;
-  box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
 }
 .social__icon a i:hover {
-  background-color: #404040;
-  transform: scale(0.99);
-  box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
-}
-.social__icon a i:active {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (min-width: 768px) {
@@ -649,17 +638,29 @@ html {
   margin-right: 2rem;
 }
 .aside .mobile__social__icon {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 25%;
+  width: 100%;
+  height: 4rem;
+  margin: 3rem auto auto auto;
+  z-index: 5;
   display: none;
 }
-.aside .mobile__social__icon a {
-  display: inline-block;
-  text-decoration: none;
+.aside .mobile__social__icon ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.aside .mobile__social__icon a i {
+.aside .mobile__social__icon ul li {
+  list-style: none;
+  padding: 0 1rem;
+}
+.aside .mobile__social__icon ul li a {
+  display: inline-block;
+  justify-content: center;
+  margin: 0 auto;
+}
+.aside .mobile__social__icon ul li a i {
   font-size: 1.5rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -669,16 +670,16 @@ html {
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin-right: 1.8rem;
+  margin-right: 1rem;
   transition: all 0.3s;
   box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
 }
-.aside .mobile__social__icon a i:hover {
+.aside .mobile__social__icon ul li a i:hover {
   background-color: #404040;
   transform: scale(0.99);
   box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
 }
-.aside .mobile__social__icon a i:active {
+.aside .mobile__social__icon ul li a i:active {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .aside .footer {
@@ -720,6 +721,7 @@ html {
   }
   .main__head .project__card__container {
     width: 100%;
+    height: auto;
   }
   .main__head .project__card__container .project__card {
     display: grid;
@@ -728,6 +730,7 @@ html {
   .aside {
     position: relative;
     width: 100%;
+    height: 25vh;
   }
   .aside .contact__btn__container {
     display: none;
@@ -761,7 +764,7 @@ html {
     width: 35rem !important;
   }
   .aside {
-    height: 70vh;
+    height: 25vh;
   }
 }
 /*
@@ -872,12 +875,6 @@ html {
 }
 .service__tab .tab i {
   font-size: 2.5rem;
-  width: 50px;
-  height: 50px;
-  border-radius: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: all 0.5s;
 }
 .service__tab .tab .tab__content {
@@ -899,12 +896,11 @@ html {
   border-bottom-right-radius: 4rem;
 }
 .service__tab .tab .fa-solid {
-  background-color: #404040;
   color: #f79328;
-  box-shadow: 0px 13px 15px rgba(247, 147, 40, 0.6);
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
-.service__tab .tab:hover i {
-  box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.6);
+.service__tab .tab:hover {
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact__form__container {
@@ -1004,17 +1000,29 @@ html {
   transition: all 0.8s;
 }
 .rightImage .mobile__social__icon {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 12%;
+  width: 100%;
+  height: 4rem;
+  margin: 3rem auto auto auto;
+  z-index: 5;
   display: none;
 }
-.rightImage .mobile__social__icon a {
-  display: inline-block;
-  text-decoration: none;
+.rightImage .mobile__social__icon ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.rightImage .mobile__social__icon a i {
+.rightImage .mobile__social__icon ul li {
+  list-style: none;
+  padding: 0 1rem;
+}
+.rightImage .mobile__social__icon ul li a {
+  display: inline-block;
+  justify-content: center;
+  margin: 0 auto;
+}
+.rightImage .mobile__social__icon ul li a i {
   font-size: 1.5rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -1024,16 +1032,16 @@ html {
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin-right: 1.8rem;
+  margin-right: 1rem;
   transition: all 0.3s;
   box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
 }
-.rightImage .mobile__social__icon a i:hover {
+.rightImage .mobile__social__icon ul li a i:hover {
   background-color: #404040;
   transform: scale(0.99);
   box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
 }
-.rightImage .mobile__social__icon a i:active {
+.rightImage .mobile__social__icon ul li a i:active {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .rightImage .footer {
@@ -1109,7 +1117,7 @@ html {
     overflow-x: auto;
   }
   .Card__container .service__tab {
-    bottom: -16%;
+    bottom: -10%;
     z-index: 499;
   }
   .contact__form__container {
@@ -1117,17 +1125,29 @@ html {
     height: auto;
   }
   .contact__form__container .mobile__social__icon {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -20%;
+    width: 100%;
+    height: 4rem;
+    margin: 3rem auto auto auto;
+    z-index: 5;
     display: block;
   }
-  .contact__form__container .mobile__social__icon a {
-    display: inline-block;
-    text-decoration: none;
+  .contact__form__container .mobile__social__icon ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .contact__form__container .mobile__social__icon a i {
+  .contact__form__container .mobile__social__icon ul li {
+    list-style: none;
+    padding: 0 1rem;
+  }
+  .contact__form__container .mobile__social__icon ul li a {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .contact__form__container .mobile__social__icon ul li a i {
     font-size: 1.5rem;
     width: 3.5rem;
     height: 3.5rem;
@@ -1137,16 +1157,16 @@ html {
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin-right: 1.8rem;
+    margin-right: 1rem;
     transition: all 0.3s;
     box-shadow: 0px 5px 10px rgba(247, 147, 40, 0.6);
   }
-  .contact__form__container .mobile__social__icon a i:hover {
+  .contact__form__container .mobile__social__icon ul li a i:hover {
     background-color: #404040;
     transform: scale(0.99);
     box-shadow: 0px 1px 10px rgba(247, 147, 40, 0.3);
   }
-  .contact__form__container .mobile__social__icon a i:active {
+  .contact__form__container .mobile__social__icon ul li a i:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   }
   .contact__form__container .footer {
@@ -1235,7 +1255,7 @@ html {
   .Card__container .service__card1,
   .Card__container .service__card2,
   .Card__container .service__card3 {
-    height: 70vh;
+    height: auto;
   }
   .service__tab {
     padding-bottom: 4rem;
