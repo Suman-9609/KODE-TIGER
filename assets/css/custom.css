@@ -169,7 +169,7 @@ html {
   display: block;
   list-style: none;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   padding: 1rem 0;
   text-align: center;
 }
@@ -193,7 +193,7 @@ html {
   text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
 .leftSide .time {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 .leftSide .date {
   margin: 1rem auto;
@@ -711,6 +711,7 @@ html {
 @media only screen and (max-width: 768px) {
   .main__head {
     margin-top: 15rem;
+    margin-bottom: 15rem;
   }
   .main__head h1 {
     font-size: 6rem;
