@@ -49,27 +49,6 @@
                     </div>
                 </div>
 
-                <!-- <script>
-                    var i = 0;
-
-                    function read() {
-
-                        if (!i) {
-                            document.getElementById('more').style.display = 'inline';
-                            document.getElementById('dots').style.display = 'none';
-                            document.getElementById('readIcon').classList.remove('fa-angle-down');
-                            document.getElementById('readIcon').classList.add('fa-angle-up');
-                            i = 1;
-                        } else {
-                            document.getElementById('more').style.display = 'none';
-                            document.getElementById('dots').style.display = 'inline';
-                            document.getElementById('readIcon').classList.remove('fa-angle-up');
-                            document.getElementById('readIcon').classList.add('fa-angle-down');
-                            i = 0;
-                        }
-
-                    }
-                </script> -->
                 <!-- imgae -->
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="rightImage">
@@ -118,34 +97,6 @@
                             </form>
                         </div>
 
-                        <!-- social icon for mobile -->
-                        <div class="mobile__social__icon__container">
-                            <div class="mobile__social__icon">
-                                <ul>
-
-                                    <li>
-                                        <a href="mailto:contact@kodetiger.io"><i class="fa fa-envelope"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://wa.me/0000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/kodetiger/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/kodetiger" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <!-- footer -->
-                        <div class="footer">
-                            <h3>KODETIGER</h3>
-                            <a href="./privacy-policy.php">Privacy Policy</a>
-                        </div>
                     </div>
                 </div>
             </div>

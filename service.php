@@ -1,7 +1,8 @@
-<?php 
+<?php
 $title = "Kode Tiger - Services";
 $bg = "background-image:url(./assets/images/bg2.png);background-repeat: no-repeat;background-position: center;background-size: cover;";
-include('./inc/header.php'); 
+$footerColor = "color:#fff";
+include('./inc/header.php');
 ?>
 
 <!-- left side -->

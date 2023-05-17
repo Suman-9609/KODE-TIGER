@@ -1,5 +1,6 @@
 <?php 
 $title = "Kode Tiger - Privacy-Policy";
+$footerColor = "color:#fff";
 include('./inc/header.php'); 
 ?>
 

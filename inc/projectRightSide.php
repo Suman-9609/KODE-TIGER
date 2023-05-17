@@ -121,36 +121,6 @@
               </div>
             </div>
           </div>
-
-
-          <!-- social icon for mobile -->
-          <div class="mobile__social__icon__container">
-            <div class="mobile__social__icon">
-              <ul>
-
-                <li>
-                  <a href="mailto:contact@kodetiger.io"><i class="fa fa-envelope"></i></a>
-                </li>
-                <li>
-                  <a href="https://wa.me/0000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/kodetiger/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/kodetiger" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-
-              </ul>
-
-            </div>
-          </div>
-
-          <!-- footer -->
-          <div class="footer">
-            <h3>KODETIGER</h3>
-            <a href="./privacy-policy.php">Privacy Policy</a>
-          </div>
         </section>
       </div>
     </div>
