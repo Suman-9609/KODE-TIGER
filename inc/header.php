@@ -24,4 +24,5 @@
     <!--preloader  -->
     <div id="loading"></div>
 
-    <div class="x__container">
+
+

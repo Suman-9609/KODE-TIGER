@@ -1,6 +1,5 @@
-<div class="">
-    <div class="leftSide">
-        <span><i class="fas fa-bars" id="hideMenuBtn"></i></span>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 sidebar">
         <a href="./index.php">
             <div class="logo__container">
                 <img src="./assets/images/logo.png" alt="" class="">
