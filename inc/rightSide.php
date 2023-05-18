@@ -1,3 +1,8 @@
+<!-- contact btn displayer -->
+<div class="contact__btn__container" id="showContactForm">
+  <h5>Contact Form</h5>
+  <span><i class="fa-sharp fa-solid fa-caret-down"></i></span>
+</div>
 
 
 <div class="x__content">
@@ -13,14 +18,9 @@
   </section>
 
   <section class="aside">
-    <!-- contact btn displayer -->
-    <div class="contact__btn__container" id="showContactForm">
-      <h5>Contact Form</h5>
-      <span><i class="fa-sharp fa-solid fa-caret-down"></i></span>
-    </div>
 
     <!-- contact form -->
-    <div class="contact__form" id="contact__form">
+    <div class="<?php echo "$contact__formClass";  ?>" id="contact__form">
       <div class="card">
         <div class="card__head">
           <h2>Contact Form</h2>

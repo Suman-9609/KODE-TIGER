@@ -24,8 +24,21 @@
     <!--preloader  -->
     <div id="loading"></div>
 
+        <!-- mobile view -->
+        <div class="mobile_view">
+        <div class="mobile__view__logo__container">
+            <a href="./index.php"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
+        </div>
+        <ul class="page__link">
+            <li><a href="./about.php">About Us</a></li>
+            <li><a href="./service.php">Services</a></li>
+            <li><a href="./blog.php">Blog</a></li>
+            <li><a href="./contact.php">Contact Us</a></li>
+        </ul>
+    </div>
+
     <!-- contact btn displayer -->
-    <div class="contact__btn__container" id="showContactForm">
+    <!-- <div class="contact__btn__container" id="<?php echo $contact__btnId; ?>">
         <h5>Contact Form</h5>
         <span><i class="fa-sharp fa-solid fa-caret-down"></i></span>
-    </div>
+    </div> -->

@@ -137,10 +137,124 @@ html {
   .sidebar {
     display: none;
   }
+  html {
+    font-size: 55%;
+  }
+}
+/*
+-------------------------------------------------------------------
+// for mobile view css
+-------------------------------------------------------------------
+*/
+.mobile_view {
+  display: none;
+  z-index: 500;
+}
+.mobile_view .mobile__view__logo__container {
+  width: 70px;
+  height: 70px;
+}
+.mobile_view i {
+  font-size: 2.5rem;
+  padding-right: 1.2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile_view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+  .mobile_view ul {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile_view ul li {
+    list-style: none;
+    padding: 0 1rem;
+    border-right: 1px solid #f79328;
+  }
+  .mobile_view ul li:last-child {
+    border-right: none;
+  }
+  .mobile_view ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  body {
+    background-size: 150% 80% !important;
+  }
 }
 /*
 -------------------------------------------------------------------
 // contact btn container
+-------------------------------------------------------------------
+*/
+.contact__btn__container {
+  width: 15%;
+  height: 4rem;
+  background-color: #fff;
+  border: 0.5px solid #f79328;
+  border-radius: 6.6rem;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  margin: 0 auto;
+}
+.contact__btn__container h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+}
+.contact__btn__container span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 100%;
+  background-color: #f79328;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__btn__container span i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact__btn__container {
+    display: none;
+  }
+}
+/*
+-------------------------------------------------------------------
+// main body css 1
 -------------------------------------------------------------------
 */
 .x__content {
@@ -152,7 +266,12 @@ html {
 }
 .x__content .main__head {
   width: 100%;
-  margin: 8rem 0 0 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  transition: all 0.5s ease-in-out;
 }
 .x__content .main__head h3 {
   font-family: "Roboto Condensed";
@@ -217,19 +336,24 @@ html {
 .x__content .main__head ul li:last-child {
   border-right: none;
 }
+.x__content .main__head.decreaseWidth {
+  width: 70%;
+}
 .x__content .aside {
-  width: 25%;
-  padding: 0 1rem;
-  overflow: hidden;
+  width: 30%;
+  height: 100%;
   position: absolute;
+  top: 0;
   right: 0;
-  top: 2rem;
+  padding-top: 10rem;
+  overflow: hidden;
 }
 .x__content .aside .contact__form {
-  width: 100%;
-  margin: 6rem auto;
-  transition: all 0.5s;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
   transform: translateX(120%);
+  transition: all 0.5s ease-in-out;
 }
 .x__content .aside .contact__form .card {
   padding: 3rem 2rem;
@@ -285,7 +409,343 @@ html {
   text-transform: capitalize;
   color: rgba(64, 64, 64, 0.6);
 }
+.x__content .aside .contact__form .card .card__body .btn__custom {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f79328;
+  box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.x__content .aside .contact__form .card .card__body .btn__custom:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.x__content .aside .contact__form .card .card__body .btn__custom:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.x__content .contact__form.showForm {
+  transform: translateX(0%);
+}
 
+@media only screen and (max-width: 768px) {
+  .x__content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .x__content .main__head {
+    padding-top: 15rem;
+  }
+  .x__content .main__head h3 {
+    font-size: 4rem;
+  }
+  .x__content .main__head h1 {
+    font-size: 7.5rem;
+  }
+  .x__content .main__head ul li {
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 447px) {
+  .x__content .main__head h3 {
+    font-size: 3rem;
+  }
+  .x__content .main__head h1 {
+    font-size: 7rem;
+  }
+  .x__content .main__head ul li a {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+/*
+-------------------------------------------------------------------
+// main body css 2
+-------------------------------------------------------------------
+*/
+.Card__container {
+  width: 100%;
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  position: relative;
+  background-color: transparent;
+}
+.Card__container .card {
+  width: 90%;
+  border: none;
+  background-color: transparent;
+}
+.Card__container .card .card-head h2 {
+  font-family: "Bebas Neue";
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  color: #f79328;
+  letter-spacing: 0.135em;
+  margin-bottom: 1rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  background-color: rgba(64, 64, 64, 0.11);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.Card__container .card .card-body {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  height: 80vh;
+  z-index: 2;
+  overflow-y: scroll;
+}
+.Card__container .card .card-body::-webkit-scrollbar {
+  width: 0.1rem;
+  border-radius: 0.9rem;
+}
+.Card__container .card .card-body::-webkit-scrollbar-track {
+  border-radius: 0.9rem;
+}
+.Card__container .card .card-body::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #f79328);
+  opacity: 0.1;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+.Card__container .card .card-body .card-text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #404040;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.Card__container .card .card-body .card-text ul li {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.Card__container .card .card-body ul li {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.rightImage {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/home.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: relative;
+  transition: all 0.8s;
+  z-index: 1;
+}
+.rightImage .contact__form {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  transform: translateX(120%);
+  padding-top: 10rem;
+  transition: all 0.5s ease-in-out;
+}
+.rightImage .contact__form .card {
+  padding: 3rem 2rem;
+  background: rgba(64, 64, 64, 0.3);
+  border: 0.5px solid #a4a4a4;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+}
+.rightImage .contact__form .card .card__head {
+  margin-bottom: 1.5rem;
+  border-bottom: 0.5px solid #ffffff;
+}
+.rightImage .contact__form .card .card__head h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.rightImage .contact__form .card .card__body input[type=text],
+.rightImage .contact__form .card .card__body select,
+.rightImage .contact__form .card .card__body textarea {
+  padding: 1rem 0.9rem;
+  font-size: 1.8rem;
+}
+.rightImage .contact__form .card .card__body input[type=text]::-moz-placeholder, .rightImage .contact__form .card .card__body select::-moz-placeholder, .rightImage .contact__form .card .card__body textarea::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.rightImage .contact__form .card .card__body input[type=text]::placeholder,
+.rightImage .contact__form .card .card__body select::placeholder,
+.rightImage .contact__form .card .card__body textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.rightImage .contact__form .card .card__body select {
+  padding: 1rem 0.9rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.rightImage .contact__form .card .card__body .btn__custom {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f79328;
+  box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.rightImage .contact__form .card .card__body .btn__custom:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.rightImage .contact__form .card .card__body .btn__custom:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.rightImage .contact__form.showaboutForm {
+  transform: translateX(0%);
+}
+
+@media only screen and (max-width: 768px) {
+  .Card__container {
+    margin-top: 15rem;
+  }
+  .Card__container .card {
+    width: 100%;
+  }
+  .rightImage .contact__form {
+    transform: translateX(0%);
+  }
+}
+/*
+-------------------------------------------------------------------
+// main body css 3
+-------------------------------------------------------------------
+*/
+.Card__container .service__card {
+  transition: all 0.5s;
+}
+.Card__container .service__card .card-body {
+  height: 60vh;
+}
+.Card__container .service__card1,
+.Card__container .service__card2,
+.Card__container .service__card3 {
+  display: none;
+  transition: all 0.8s;
+}
+.Card__container .service__card1 .card-body,
+.Card__container .service__card2 .card-body,
+.Card__container .service__card3 .card-body {
+  height: 60vh;
+}
+.Card__container .service__tab {
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 499;
+  display: flex;
+}
+.Card__container .service__tab .tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.Card__container .service__tab .tab i {
+  font-size: 2.5rem;
+  transition: all 0.5s;
+}
+.Card__container .service__tab .tab .tab__content {
+  background-color: #f79328;
+  padding: 1rem 2rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.008rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.Card__container .service__tab .tab .first_child {
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+}
+.Card__container .service__tab .tab .last_child {
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+.Card__container .service__tab .tab .fa-solid {
+  color: #f79328;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.Card__container .service__tab .tab:hover {
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.service_img {
+  background-image: url("../images/service.png");
+}
+
+.service_img1 {
+  background-image: url("../images/service1.png");
+}
+
+.service_img2 {
+  background-image: url("../images/service2.png");
+}
+
+.service_img3 {
+  background-image: url("../images/service3.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .Card__container {
+    margin-top: 15rem;
+  }
+  .Card__container .service__card .card-body {
+    height: auto;
+    margin-bottom: 15rem;
+  }
+  .Card__container .service__card1,
+  .Card__container .service__card2,
+  .Card__container .service__card3 {
+    display: none;
+    transition: all 0.8s;
+  }
+  .Card__container .service__card1 .card-body,
+  .Card__container .service__card2 .card-body,
+  .Card__container .service__card3 .card-body {
+    height: auto;
+    margin-bottom: 15rem;
+  }
+  .Card__container .service__tab {
+    bottom: 3%;
+  }
+}
 /*
 -------------------------------------------------------------------
 // Footer css design
@@ -296,13 +756,14 @@ html {
   height: 70px;
   position: absolute;
   right: 0.5rem;
-  bottom: 20px;
+  bottom: 10px;
+  z-index: 10;
 }
 .footer .footer__container {
   width: 300px;
   position: absolute;
   right: 0.9rem;
-  bottom: 20px;
+  bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,6 +828,9 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
   .footer .footer__container {
     left: 50%;
     transform: translateX(-50%);

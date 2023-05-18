@@ -1,6 +1,8 @@
 <?php 
 $title = "Kode Tiger - Homepage";
 $bg = "background-image:url(./assets/images/bg.png);background-repeat: no-repeat;background-position: center;background-size: cover;";
+$contact__btnId = "showContactForm";
+$contact__formClass = "contact__form";
 include('./inc/header.php'); 
 ?>
 
