@@ -5,7 +5,7 @@ include('./inc/header.php');
 ?>
 
 <!-- left side -->
-<?php include('./inc/leftSide.php'); ?>
+<?php include('./inc/sidebar.php'); ?>
 
 
 <!-- right side -->

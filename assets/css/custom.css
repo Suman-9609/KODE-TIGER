@@ -98,6 +98,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 0;
+  z-index: 100;
 }
 .sidebar ul {
   padding: 0;
@@ -111,40 +112,178 @@ html {
   transition: all 0.5s ease-out;
 }
 .sidebar ul li a {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 14px;
-  text-align: center;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   color: #404040;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s;
+}
+.sidebar ul li a:hover {
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
 .sidebar ul li a i {
-  font-size: 2.8rem;
-  padding-bottom: 0.8rem;
+  font-size: 2.5rem;
+  transition: all 0.25s;
 }
-.sidebar ul li:hover .fa-folder {
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+.sidebar ul li a .fa-solid {
+  color: #404040;
+}
+.sidebar ul li a:hover .fa-solid {
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+/*
+-------------------------------------------------------------------
+// contact btn container
+-------------------------------------------------------------------
+*/
 .x__content {
   width: 90%;
+  height: 100vh;
   margin: 0 0 0 10%;
+  position: relative;
+  overflow: hidden;
 }
-.x__content .rightside__content {
+.x__content .main__head {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 8rem 0 0 0;
 }
-.x__content .rightside__image {
-  width: 30%;
-  background-color: aquamarine;
+.x__content .main__head h3 {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-size: 4.4rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #545454;
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.x__content .main__head h1 {
+  color: transparent;
+  background-image: url("../images/tigerskin.jpg");
+  background-position: center;
+  background-size: contain;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  display: block;
+  font-size: 9.5rem;
+  font-weight: 400;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.x__content .main__head ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  animation-name: moveBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.x__content .main__head ul li {
+  list-style: none;
+  padding: 0 3rem;
+  border-right: 2px solid #f79328;
+  text-align: center;
+}
+.x__content .main__head ul li a {
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: rgba(40, 39, 39, 0.6);
+  transition: all 0.5s;
+}
+.x__content .main__head ul li a:hover {
+  font-weight: bold;
+}
+.x__content .main__head ul li:last-child {
+  border-right: none;
+}
+.x__content .aside {
+  width: 25%;
+  padding: 0 1rem;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+.x__content .aside .contact__form {
+  width: 100%;
+  margin: 6rem auto;
+  transition: all 0.5s;
+  transform: translateX(120%);
+}
+.x__content .aside .contact__form .card {
+  padding: 3rem 2rem;
+  background: rgba(64, 64, 64, 0.3);
+  border: 0.5px solid #a4a4a4;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+}
+.x__content .aside .contact__form .card .card__head {
+  margin-bottom: 1.5rem;
+  border-bottom: 0.5px solid #ffffff;
+}
+.x__content .aside .contact__form .card .card__head h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.x__content .aside .contact__form .card .card__body input[type=text],
+.x__content .aside .contact__form .card .card__body select,
+.x__content .aside .contact__form .card .card__body textarea {
+  padding: 1rem 0.9rem;
+  font-size: 1.8rem;
+}
+.x__content .aside .contact__form .card .card__body input[type=text]::-moz-placeholder, .x__content .aside .contact__form .card .card__body select::-moz-placeholder, .x__content .aside .contact__form .card .card__body textarea::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.x__content .aside .contact__form .card .card__body input[type=text]::placeholder,
+.x__content .aside .contact__form .card .card__body select::placeholder,
+.x__content .aside .contact__form .card .card__body textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.x__content .aside .contact__form .card .card__body select {
+  padding: 1rem 0.9rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
 }
 
 /*
@@ -155,22 +294,23 @@ html {
 .footer {
   width: 100%;
   height: 70px;
-  position: relative;
-  margin: 0 auto;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 20px;
 }
 .footer .footer__container {
   width: 300px;
   position: absolute;
-  right: 1rem;
+  right: 0.9rem;
   bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f79328;
 }
 .footer .footer__container .mobile__social__icon {
   margin-bottom: 2rem;
+  display: none;
 }
 .footer .footer__container .mobile__social__icon a {
   font-size: 2rem;
@@ -224,4 +364,14 @@ html {
   line-height: 17px;
   color: #f79328;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer .footer__container .mobile__social__icon {
+    display: block;
+  }
 }/*# sourceMappingURL=custom.css.map */
