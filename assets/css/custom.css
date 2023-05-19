@@ -336,6 +336,54 @@ html {
 .x__content .main__head ul li:last-child {
   border-right: none;
 }
+.x__content .main__head .project__card__container {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+.x__content .main__head .project__card__container .project__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 6rem;
+}
+.x__content .main__head .project__card__container .project__card .card {
+  width: 40rem;
+  height: auto;
+  background: #404040;
+  box-shadow: 7.36336px 7.36336px 11.045px rgba(65, 65, 65, 0.25);
+  border-radius: 22.0901px;
+  padding: 1.5rem;
+  transition: all 0.5s;
+}
+.x__content .main__head .project__card__container .project__card .card .card-body {
+  color: #fff;
+}
+.x__content .main__head .project__card__container .project__card .card .card-body h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #f79328;
+  padding: 2rem 0;
+}
+.x__content .main__head .project__card__container .project__card .card .card-body .card-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 20px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.x__content .main__head .project__card__container .project__card .card:hover {
+  transform: scale(0.99);
+  box-shadow: 0.36336px 0.36336px 0.045px rgba(65, 65, 65, 0.25);
+}
 .x__content .main__head.decreaseWidth {
   width: 70%;
 }
@@ -436,7 +484,7 @@ html {
     margin: 0 auto;
   }
   .x__content .main__head {
-    padding-top: 15rem;
+    padding-top: 18rem;
   }
   .x__content .main__head h3 {
     font-size: 4rem;
@@ -447,6 +495,29 @@ html {
   .x__content .main__head ul li {
     padding: 0 0.5rem;
     text-align: center;
+  }
+  .x__content .main__head .project__card__container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .x__content .main__head .project__card__container .project__card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .x__content .main__head .project__card__container .project__card .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .x__content .aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 447px) {
@@ -460,10 +531,14 @@ html {
     font-weight: 600;
     font-size: 1rem;
   }
+  .x__content .main__head .project__card__container .project__card .card {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 /*
 -------------------------------------------------------------------
-// main body css 2
+// About us page css 
 -------------------------------------------------------------------
 */
 .Card__container {
@@ -634,13 +709,16 @@ html {
   .Card__container .card {
     width: 100%;
   }
+  .Card__container .card .card-body {
+    height: auto;
+  }
   .rightImage .contact__form {
     transform: translateX(0%);
   }
 }
 /*
 -------------------------------------------------------------------
-// main body css 3
+// service page css
 -------------------------------------------------------------------
 */
 .Card__container .service__card {
@@ -746,6 +824,101 @@ html {
     bottom: 3%;
   }
 }
+/*
+-------------------------------------------------------------------
+// Contact page css design
+-------------------------------------------------------------------
+*/
+.Card__container .contact__form__container {
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.Card__container .contact__form__container .card {
+  width: 55rem;
+  height: 45rem;
+  background-color: #fafafa;
+  padding: 2rem;
+  background: #fafafa;
+  box-shadow: 0px 3.94593px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 1.14rem;
+  margin-bottom: 2rem;
+}
+.Card__container .contact__form__container .card .card__head {
+  padding-bottom: 2rem;
+}
+.Card__container .contact__form__container .card .card__head h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #f79328;
+  border-bottom: 0.633849px solid rgba(64, 64, 64, 0.6);
+  padding-bottom: 0.8rem;
+  text-align: center;
+}
+.Card__container .contact__form__container .card .card__body input[type=text],
+.Card__container .contact__form__container .card .card__body select,
+.Card__container .contact__form__container .card .card__body textarea {
+  padding: 0.6rem 0.9rem;
+  font-size: 1.75rem;
+  border: 0.633849px solid #d1d1d1;
+  border-radius: 1.2rem;
+}
+.Card__container .contact__form__container .card .card__body input[type=text]::-moz-placeholder, .Card__container .contact__form__container .card .card__body select::-moz-placeholder, .Card__container .contact__form__container .card .card__body textarea::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.Card__container .contact__form__container .card .card__body input[type=text]::placeholder,
+.Card__container .contact__form__container .card .card__body select::placeholder,
+.Card__container .contact__form__container .card .card__body textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+}
+.Card__container .contact__form__container .card .card__body select {
+  padding: 1rem 0.9rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(64, 64, 64, 0.6);
+  border-radius: 1.2rem;
+}
+.Card__container .contact__form__container .card .card__body .btn__custom {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f79328;
+  box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.Card__container .contact__form__container .card .card__body .btn__custom:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.Card__container .contact__form__container .card .card__body .btn__custom:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.Card__container .contact__form__container .mobile__social__icon {
+  display: none;
+}
+
+.contactImage {
+  background-image: url("../images/contact.png");
+}
+.contactImage .contact__form {
+  display: none;
+}
+
 /*
 -------------------------------------------------------------------
 // Footer css design
