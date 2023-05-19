@@ -201,6 +201,57 @@ html {
 }
 /*
 -------------------------------------------------------------------
+// desktop__social__icon css
+-------------------------------------------------------------------
+*/
+.desktop__social__icon {
+  position: fixed;
+  top: 2rem;
+  right: 35%;
+  z-index: 600;
+}
+.desktop__social__icon a {
+  font-size: 2rem;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background: #333;
+  color: #999;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.desktop__social__icon a:hover:nth-child(1) {
+  color: #fff;
+  background: rgba(255, 26, 26, 0.6);
+  box-shadow: 0 0 0 5px rgba(255, 179, 179, 0.1), 0 0 0 10px rgba(255, 128, 128, 0.1), 0 0 0 15px rgba(255, 102, 102, 0.1);
+}
+.desktop__social__icon a:hover:nth-child(2) {
+  color: #fff;
+  background: rgba(0, 255, 85, 0.6);
+  box-shadow: 0 0 0 5px rgba(204, 255, 221, 0.1), 0 0 0 10px rgba(153, 255, 187, 0.1), 0 0 0 15px rgba(102, 255, 153, 0.1);
+}
+.desktop__social__icon a:hover:nth-child(3) {
+  color: #fff;
+  background: rgba(0, 111, 230, 0.6);
+  box-shadow: 0 0 0 5px rgba(0, 111, 230, 0.1), 0 0 0 10px rgba(51, 150, 255, 0.1), 0 0 0 15px rgba(128, 189, 255, 0.1), 0 0 0 20px rgba(179, 215, 255, 0.1), 0 0 0 25px rgba(230, 242, 255, 0.1);
+}
+.desktop__social__icon a:hover:nth-child(4) {
+  color: #fff;
+  background: rgba(0, 111, 230, 0.6);
+  box-shadow: 0 0 0 5px rgba(0, 111, 230, 0.1), 0 0 0 10px rgba(51, 150, 255, 0.1), 0 0 0 15px rgba(128, 189, 255, 0.1), 0 0 0 20px rgba(179, 215, 255, 0.1), 0 0 0 25px rgba(230, 242, 255, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop__social__icon {
+    display: none;
+  }
+}
+/*
+-------------------------------------------------------------------
 // contact btn container
 -------------------------------------------------------------------
 */
@@ -712,6 +763,10 @@ html {
   .Card__container .card .card-body {
     height: auto;
   }
+  .rightImage {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
   .rightImage .contact__form {
     transform: translateX(0%);
   }
@@ -835,14 +890,14 @@ html {
   animation-timing-function: ease-out;
 }
 .Card__container .contact__form__container .card {
-  width: 55rem;
+  width: 70rem;
   height: 45rem;
   background-color: #fafafa;
   padding: 2rem;
   background: #fafafa;
   box-shadow: 0px 3.94593px 25px rgba(0, 0, 0, 0.2);
   border-radius: 1.14rem;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 .Card__container .contact__form__container .card .card__head {
   padding-bottom: 2rem;
@@ -919,6 +974,16 @@ html {
   display: none;
 }
 
+@media only screen and (max-width: 668px) {
+  .Card__container .contact__form__container .card {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .Card__container .contact__form__container .card {
+    width: 33rem;
+  }
+}
 /*
 -------------------------------------------------------------------
 // Footer css design
@@ -928,14 +993,14 @@ html {
   width: 100%;
   height: 70px;
   position: absolute;
-  right: 0.5rem;
+  right: 0rem;
   bottom: 10px;
   z-index: 10;
 }
 .footer .footer__container {
-  width: 300px;
+  width: 235px;
   position: absolute;
-  right: 0.9rem;
+  right: 0rem;
   bottom: 10px;
   display: flex;
   flex-direction: column;
