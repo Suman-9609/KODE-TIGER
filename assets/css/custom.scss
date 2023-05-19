@@ -163,7 +163,7 @@ html {
       list-style: none;
       text-align: center;
       margin: 6rem auto;
-      padding: 3rem auto;
+      padding: 5rem auto;
       transition: all 0.5s ease-out;
 
       a {
@@ -180,6 +180,7 @@ html {
 
         i {
           font-size: 2.5rem;
+          padding-bottom: 1rem;
           transition: all 0.25s;
         }
 
@@ -190,6 +191,10 @@ html {
         &:hover .fa-solid {
           text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
         }
+      }
+
+      &:nth-last-child(4) {
+        margin: 0;
       }
     }
   }
@@ -365,7 +370,7 @@ html {
   h5 {
     font-weight: 700;
     font-size: 1.2rem;
-    width: 80%;
+    width: 70%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -379,7 +384,7 @@ html {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 20%;
+    width: 30%;
     height: 100%;
     background-color: $primary-color;
     border-radius: 0.8rem;
@@ -568,7 +573,7 @@ html {
 
     // contact form
     .contact__form {
-      width: 90%;
+      width: 80%;
       height: auto;
       margin: 0 auto;
       transform: translateX(120%);
@@ -598,7 +603,10 @@ html {
         }
 
         .card__body {
+
           input[type="text"],
+          input[type="number"],
+          input[type="email"],
           select,
           textarea {
             padding: 1rem 0.9rem;
@@ -627,6 +635,7 @@ html {
             @include btn__custom();
           }
         }
+
       }
     }
   }
@@ -833,11 +842,12 @@ html {
 
   // contact form
   .contact__form {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     transform: translateX(120%);
     padding-top: 10rem;
+    padding-left: 5rem;
     transition: all 0.5s ease-in-out;
 
     .card {
@@ -849,6 +859,7 @@ html {
       border-radius: 8px;
 
       .card__head {
+        text-align: center;
         margin-bottom: 1.5rem;
         border-bottom: 0.5px solid #ffffff;
 
@@ -864,7 +875,10 @@ html {
       }
 
       .card__body {
+
         input[type="text"],
+        input[type="number"],
+        input[type="email"],
         select,
         textarea {
           padding: 1rem 0.9rem;
@@ -921,6 +935,7 @@ html {
 
     .contact__form {
       transform: translateX(0%);
+      padding-left: 0;
     }
   }
 }
@@ -1067,8 +1082,8 @@ html {
     animation-timing-function: ease-out;
 
     .card {
-      width: 70rem;
-      height: 45rem;
+      width: 44rem;
+      height: 48rem;
       background-color: #fafafa;
       padding: 2rem;
       background: #fafafa;
@@ -1089,40 +1104,41 @@ html {
           text-align: center;
         }
       }
+        .card__body {
 
-      .card__body {
-        input[type="text"],
-        select,
-        textarea {
-          padding: 0.6rem 0.9rem;
-          font-size: 1.75rem;
-          border: 0.633849px solid #d1d1d1;
-          border-radius: 1.2rem;
+          input[type="text"],
+          input[type="number"],
+          input[type="email"],
+          select,
+          textarea {
+            padding: 1rem 0.9rem;
+            font-size: 1.8rem;
+            border-radius: 10.1416px;
 
-          &::placeholder {
-            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            &::placeholder {
+              /* Chrome, Firefox, Opera, Safari 10.1+ */
+              font-family: "Montserrat";
+              font-weight: 400;
+              font-size: 1.2rem;
+              text-transform: capitalize;
+              color: rgba(64, 64, 64, 0.6);
+            }
+          }
+
+          select {
+            padding: 1rem 0.9rem;
             font-family: "Montserrat";
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             text-transform: capitalize;
             color: rgba(64, 64, 64, 0.6);
+            border-radius: 10.1416px;
+          }
+
+          .btn__custom {
+            @include btn__custom();
           }
         }
-
-        select {
-          padding: 1rem 0.9rem;
-          font-family: "Montserrat";
-          font-weight: 400;
-          font-size: 1.2rem;
-          text-transform: capitalize;
-          color: rgba(64, 64, 64, 0.6);
-          border-radius: 1.2rem;
-        }
-
-        .btn__custom {
-          @include btn__custom();
-        }
-      }
     }
 
     .mobile__social__icon {
@@ -1147,6 +1163,10 @@ html {
         width: 40rem;
       }
     }
+  }
+
+  .contactImage {
+    height: 25vh;
   }
 }
 

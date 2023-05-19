@@ -42,9 +42,9 @@
                 <div class="rightImage">
 
                   <!-- contact form -->
-                  <div class="contact__form" id="about__form">
-                    <form action="" method="post">
-                      <div class="card">
+                  <!-- <div class="contact__form" id="about__form">
+                    <div class="card">
+                      <form id="myForm">
                         <div class="card__head">
                           <h2>Contact Form</h2>
                         </div>
@@ -76,9 +76,10 @@
                             <input type="submit" value="SUBMIT" class="btn btn__custom btn-lg" id="button">
                           </div>
                         </div>
-                      </div>
-                    </form>
-                  </div>
+                      </form>
+                    </div>
+                  </div> -->
+                  <?php include('form.php') ?>
 
                 </div>
               </div>

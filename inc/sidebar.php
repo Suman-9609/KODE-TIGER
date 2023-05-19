@@ -25,7 +25,7 @@
         </ul>
         <div class="time" onload="setDate()">
             <div class="hour text-center fw-bold fs-5" id="hour" style="letter-spacing: 0.2rem;"> 11:54 AM </div>
-            <div class="date text-center fs-5" id="date" style="letter-spacing: 0.2rem;"> 02-05-2023 </div>
+            <div class="date text-center fs-5 py-3" id="date" style="letter-spacing: 0.2rem;"> 02-05-2023 </div>
             <div class="day text-center fw-bold fs-5" id="day" style="letter-spacing: 0.2rem; text-transform:uppercase;"> TUESDAY </div>
         </div>
 

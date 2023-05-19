@@ -75,7 +75,7 @@
       <section class="aside">
 
         <!-- contact form -->
-        <div class="<?php echo "$contact__formClass";  ?>" id="contact__form">
+        <!-- <div class="<?php echo "$contact__formClass";  ?>" id="contact__form">
           <div class="card">
             <div class="card__head">
               <h2>Contact Form</h2>
@@ -106,7 +106,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+
+        <?php include('form.php') ?>
       </section>
 
     </div>

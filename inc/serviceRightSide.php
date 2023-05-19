@@ -248,8 +248,7 @@
                 <div class="rightImage service_img" id="rightImage">
 
                   <!-- contact form -->
-                  <div class="contact__form" id="about__form">
-                    <form action="" method="post">
+                  <!-- <div class="contact__form" id="about__form">
                       <div class="card">
                         <div class="card__head">
                           <h2>Contact Form</h2>
@@ -284,7 +283,8 @@
                         </div>
                       </div>
                     </form>
-                  </div>
+                  </div> -->
+                  <?php include('form.php') ?>
 
                 </div>
               </div>

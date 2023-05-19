@@ -108,7 +108,7 @@ html {
   list-style: none;
   text-align: center;
   margin: 6rem auto;
-  padding: 3rem auto;
+  padding: 5rem auto;
   transition: all 0.5s ease-out;
 }
 .sidebar ul li a {
@@ -124,6 +124,7 @@ html {
 }
 .sidebar ul li a i {
   font-size: 2.5rem;
+  padding-bottom: 1rem;
   transition: all 0.25s;
 }
 .sidebar ul li a .fa-solid {
@@ -131,6 +132,9 @@ html {
 }
 .sidebar ul li a:hover .fa-solid {
   text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.sidebar ul li:nth-last-child(4) {
+  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -272,7 +276,7 @@ html {
 .contact__btn__container h5 {
   font-weight: 700;
   font-size: 1.2rem;
-  width: 80%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -285,7 +289,7 @@ html {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 20%;
+  width: 30%;
   height: 100%;
   background-color: #f79328;
   border-radius: 0.8rem;
@@ -448,7 +452,7 @@ html {
   overflow: hidden;
 }
 .x__content .aside .contact__form {
-  width: 90%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   transform: translateX(120%);
@@ -477,12 +481,14 @@ html {
   color: #ffffff;
 }
 .x__content .aside .contact__form .card .card__body input[type=text],
+.x__content .aside .contact__form .card .card__body input[type=number],
+.x__content .aside .contact__form .card .card__body input[type=email],
 .x__content .aside .contact__form .card .card__body select,
 .x__content .aside .contact__form .card .card__body textarea {
   padding: 1rem 0.9rem;
   font-size: 1.8rem;
 }
-.x__content .aside .contact__form .card .card__body input[type=text]::-moz-placeholder, .x__content .aside .contact__form .card .card__body select::-moz-placeholder, .x__content .aside .contact__form .card .card__body textarea::-moz-placeholder {
+.x__content .aside .contact__form .card .card__body input[type=text]::-moz-placeholder, .x__content .aside .contact__form .card .card__body input[type=number]::-moz-placeholder, .x__content .aside .contact__form .card .card__body input[type=email]::-moz-placeholder, .x__content .aside .contact__form .card .card__body select::-moz-placeholder, .x__content .aside .contact__form .card .card__body textarea::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: "Montserrat";
   font-weight: 400;
@@ -491,6 +497,8 @@ html {
   color: rgba(64, 64, 64, 0.6);
 }
 .x__content .aside .contact__form .card .card__body input[type=text]::placeholder,
+.x__content .aside .contact__form .card .card__body input[type=number]::placeholder,
+.x__content .aside .contact__form .card .card__body input[type=email]::placeholder,
 .x__content .aside .contact__form .card .card__body select::placeholder,
 .x__content .aside .contact__form .card .card__body textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -672,11 +680,12 @@ html {
   z-index: 1;
 }
 .rightImage .contact__form {
-  width: 90%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   transform: translateX(120%);
   padding-top: 10rem;
+  padding-left: 5rem;
   transition: all 0.5s ease-in-out;
 }
 .rightImage .contact__form .card {
@@ -689,6 +698,7 @@ html {
   border-radius: 8px;
 }
 .rightImage .contact__form .card .card__head {
+  text-align: center;
   margin-bottom: 1.5rem;
   border-bottom: 0.5px solid #ffffff;
 }
@@ -702,12 +712,14 @@ html {
   color: #ffffff;
 }
 .rightImage .contact__form .card .card__body input[type=text],
+.rightImage .contact__form .card .card__body input[type=number],
+.rightImage .contact__form .card .card__body input[type=email],
 .rightImage .contact__form .card .card__body select,
 .rightImage .contact__form .card .card__body textarea {
   padding: 1rem 0.9rem;
   font-size: 1.8rem;
 }
-.rightImage .contact__form .card .card__body input[type=text]::-moz-placeholder, .rightImage .contact__form .card .card__body select::-moz-placeholder, .rightImage .contact__form .card .card__body textarea::-moz-placeholder {
+.rightImage .contact__form .card .card__body input[type=text]::-moz-placeholder, .rightImage .contact__form .card .card__body input[type=number]::-moz-placeholder, .rightImage .contact__form .card .card__body input[type=email]::-moz-placeholder, .rightImage .contact__form .card .card__body select::-moz-placeholder, .rightImage .contact__form .card .card__body textarea::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: "Montserrat";
   font-weight: 400;
@@ -716,6 +728,8 @@ html {
   color: rgba(64, 64, 64, 0.6);
 }
 .rightImage .contact__form .card .card__body input[type=text]::placeholder,
+.rightImage .contact__form .card .card__body input[type=number]::placeholder,
+.rightImage .contact__form .card .card__body input[type=email]::placeholder,
 .rightImage .contact__form .card .card__body select::placeholder,
 .rightImage .contact__form .card .card__body textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -769,6 +783,7 @@ html {
   }
   .rightImage .contact__form {
     transform: translateX(0%);
+    padding-left: 0;
   }
 }
 /*
@@ -890,8 +905,8 @@ html {
   animation-timing-function: ease-out;
 }
 .Card__container .contact__form__container .card {
-  width: 70rem;
-  height: 45rem;
+  width: 44rem;
+  height: 48rem;
   background-color: #fafafa;
   padding: 2rem;
   background: #fafafa;
@@ -913,14 +928,15 @@ html {
   text-align: center;
 }
 .Card__container .contact__form__container .card .card__body input[type=text],
+.Card__container .contact__form__container .card .card__body input[type=number],
+.Card__container .contact__form__container .card .card__body input[type=email],
 .Card__container .contact__form__container .card .card__body select,
 .Card__container .contact__form__container .card .card__body textarea {
-  padding: 0.6rem 0.9rem;
-  font-size: 1.75rem;
-  border: 0.633849px solid #d1d1d1;
-  border-radius: 1.2rem;
+  padding: 1rem 0.9rem;
+  font-size: 1.8rem;
+  border-radius: 10.1416px;
 }
-.Card__container .contact__form__container .card .card__body input[type=text]::-moz-placeholder, .Card__container .contact__form__container .card .card__body select::-moz-placeholder, .Card__container .contact__form__container .card .card__body textarea::-moz-placeholder {
+.Card__container .contact__form__container .card .card__body input[type=text]::-moz-placeholder, .Card__container .contact__form__container .card .card__body input[type=number]::-moz-placeholder, .Card__container .contact__form__container .card .card__body input[type=email]::-moz-placeholder, .Card__container .contact__form__container .card .card__body select::-moz-placeholder, .Card__container .contact__form__container .card .card__body textarea::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: "Montserrat";
   font-weight: 400;
@@ -929,6 +945,8 @@ html {
   color: rgba(64, 64, 64, 0.6);
 }
 .Card__container .contact__form__container .card .card__body input[type=text]::placeholder,
+.Card__container .contact__form__container .card .card__body input[type=number]::placeholder,
+.Card__container .contact__form__container .card .card__body input[type=email]::placeholder,
 .Card__container .contact__form__container .card .card__body select::placeholder,
 .Card__container .contact__form__container .card .card__body textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -942,10 +960,10 @@ html {
   padding: 1rem 0.9rem;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
   color: rgba(64, 64, 64, 0.6);
-  border-radius: 1.2rem;
+  border-radius: 10.1416px;
 }
 .Card__container .contact__form__container .card .card__body .btn__custom {
   font-family: "roboto";
@@ -977,6 +995,9 @@ html {
 @media only screen and (max-width: 668px) {
   .Card__container .contact__form__container .card {
     width: 40rem;
+  }
+  .contactImage {
+    height: 25vh;
   }
 }
 @media only screen and (max-width: 350px) {
