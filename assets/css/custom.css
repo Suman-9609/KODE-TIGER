@@ -117,7 +117,7 @@ html {
   font-weight: 600;
   letter-spacing: 0.18em;
   color: #404040;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .sidebar ul li a:hover {
   text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
@@ -226,7 +226,7 @@ html {
   text-align: center;
   margin: 0 1rem;
   cursor: pointer;
-  transition: 0.3s ease-out;
+  transition: 0.5s ease-out;
 }
 .desktop__social__icon a:hover:nth-child(1) {
   color: #fff;
@@ -240,12 +240,12 @@ html {
 }
 .desktop__social__icon a:hover:nth-child(3) {
   color: #fff;
-  background: rgba(0, 111, 230, 0.6);
+  background: rgb(10, 102, 194);
   box-shadow: 0 0 0 5px rgba(0, 111, 230, 0.1), 0 0 0 10px rgba(51, 150, 255, 0.1), 0 0 0 15px rgba(128, 189, 255, 0.1), 0 0 0 20px rgba(179, 215, 255, 0.1), 0 0 0 25px rgba(230, 242, 255, 0.1);
 }
 .desktop__social__icon a:hover:nth-child(4) {
   color: #fff;
-  background: rgba(0, 111, 230, 0.6);
+  background: rgb(1, 101, 225);
   box-shadow: 0 0 0 5px rgba(0, 111, 230, 0.1), 0 0 0 10px rgba(51, 150, 255, 0.1), 0 0 0 15px rgba(128, 189, 255, 0.1), 0 0 0 20px rgba(179, 215, 255, 0.1), 0 0 0 25px rgba(230, 242, 255, 0.1);
 }
 
@@ -468,6 +468,7 @@ html {
   border-radius: 8px;
 }
 .x__content .aside .contact__form .card .card__head {
+  text-align: center;
   margin-bottom: 1.5rem;
   border-bottom: 0.5px solid #ffffff;
 }
@@ -912,7 +913,7 @@ html {
   background: #fafafa;
   box-shadow: 0px 3.94593px 25px rgba(0, 0, 0, 0.2);
   border-radius: 1.14rem;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 .Card__container .contact__form__container .card .card__head {
   padding-bottom: 2rem;

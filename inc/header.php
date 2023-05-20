@@ -26,8 +26,8 @@
     <!--preloader  -->
     <div id="loading"></div>
 
-        <!-- mobile view -->
-        <div class="mobile_view">
+    <!-- mobile view -->
+    <div class="mobile_view">
         <div class="mobile__view__logo__container">
             <a href="./index.php"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
         </div>
