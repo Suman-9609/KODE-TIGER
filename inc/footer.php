@@ -112,7 +112,43 @@
     if (Errorname == false && Errorphone == false && Erroremail == false && Errorservice == false) {
       return true;
     }
+  }
+</script>
 
+<!-- send email -->
+<script>
+  function sendEmail() {
+    console.log('clicked me');
+
+    var userName = document.getElementById('name').value;
+    var userPhone = document.getElementById('whatsapp_no').value;
+    var userEmail = document.getElementById('email').value;
+    var userService = document.getElementById('services').value;
+    var userMessage = document.getElementById('message').value;
+
+    var bodydata = "Name :" + userName + "<br> Phone Number :" + userPhone + "<br> Email :" + userEmail + "<br> Service :" + userService + "<br> Message :" + userMessage;
+
+    Email.send({
+      SecureToken: "4cf27db1-08d9-4510-a14b-636bdd1e1555",
+      To: 'sumandaskamg@gmail.com',
+      From: "sdsp32391@gmail.com",
+      Subject: "Try to send message",
+      Body: bodydata
+    }).then(
+      message => {
+        if (message == "OK") {
+          alert("Your Message Has Been Sent Successfully");
+
+          // userName = document.getElementById('name').value = "";
+          // userPhone = document.getElementById('whatsapp_no').value = "";
+          // userEmail = document.getElementById('email').value = "";
+          // userService = document.getElementById('services').value = "";
+          // userMessage = document.getElementById('message').value = "";
+        } else {
+          alert("Something went wrong!!!");
+        }
+      }
+    );
   }
 </script>
 
@@ -157,6 +193,7 @@
           success: function(response) {
             // Handle the success response
             swal("Thank You!", response, "success");
+            sendEmail();
             $("#name").val('');
             $("#whatsapp_no").val('');
             $("#email").val('');
