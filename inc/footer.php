@@ -154,7 +154,7 @@
 
 
 <script src="./assets/js/displayTime.js"></script>
-<!-- <script src="./assets/js/activePage.js"></script> -->
+<script src="./assets/js/activePage.js"></script>
 <script src="./assets/js/custom.js"></script>
 <script src="./assets/js/main.js"></script>
 <!-- sweet alert js -->
