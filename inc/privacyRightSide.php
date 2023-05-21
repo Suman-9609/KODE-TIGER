@@ -79,7 +79,7 @@
               </div>
 
               <!-- imgae -->
-              <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col-md-4 col-sm-12 col-xs-12 m-0 p-0">
                 <div class="rightImage">
 
                   <!-- contact form -->

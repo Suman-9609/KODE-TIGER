@@ -138,12 +138,6 @@
       message => {
         if (message == "OK") {
           alert("Your Message Has Been Sent Successfully");
-
-          // userName = document.getElementById('name').value = "";
-          // userPhone = document.getElementById('whatsapp_no').value = "";
-          // userEmail = document.getElementById('email').value = "";
-          // userService = document.getElementById('services').value = "";
-          // userMessage = document.getElementById('message').value = "";
         } else {
           alert("Something went wrong!!!");
         }
