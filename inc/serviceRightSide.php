@@ -11,11 +11,11 @@
         <div class="x__content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="col-md-7 col-sm-12 col-xs-12">
                 <div class="Card__container">
                   <div class="card service__card">
                     <div class="card-head">
-                      <h2>Our Services</h2>
+                      <h1>Our Services</h1>
                     </div>
                     <div class="card-body">
                       <div class="card-text">
@@ -59,12 +59,12 @@
                   </div>
                   <div class="card service__card1">
                     <div class="card-head">
-                      <h2>Software Development</h2>
+                      <h1>Software Development</h1>
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title fw-bolder fs-3">Digital Marketing</h5>
+                      <h5 class="card-title fw-bolder fs-3">Understanding Your Business Needs</h5>
                       <div class="card-text">
-                        <span style="border-left:4px solid #f79328; padding-left: 3px;">Our team at Kode Tiger places great importance on understanding your unique business requirements. We invest time in:
+                        <span style="border-left:4px solid #f79328; padding-left: 3px;">Our team </span> Kode Tiger places great importance on understanding your unique business requirements. We invest time in:
                           <ul>
                             <li>Comprehending your business objectives and goals</li>
                             <li>Identifying the challenges, you face</li>
@@ -106,7 +106,7 @@
                   </div>
                   <div class="card service__card2">
                     <div class="card-head">
-                      <h2>Web Development</h2>
+                      <h1>Web Development</h1>
                     </div>
                     <div class="card-body">
                       <div class="card-text">
@@ -159,7 +159,7 @@
                   </div>
                   <div class="card service__card3">
                     <div class="card-head">
-                      <h2>Digital Marketing</h2>
+                      <h1>Digital Marketing</h1>
                     </div>
                     <div class="card-body">
                       <div class="card-text">
@@ -238,7 +238,7 @@
               </div>
 
               <!-- imgae -->
-              <div class="col-md-4 col-sm-12 col-xs-12 m-0 p-0">
+              <div class="col-md-5 col-sm-12 col-xs-12 m-0 p-0">
                 <div class="rightImage service_img" id="rightImage">
 
                   <!-- contact form -->
@@ -315,8 +315,8 @@
             tab_icon3.classList.remove('fa-regular');;
             service__card.style.display = 'none';
             service__card1.style.display = 'none';
-            service__card2.style.display = 'block';
-            service__card3.style.display = 'none';
+            service__card2.style.display = 'none';
+            service__card3.style.display = 'block';
             rightImage.classList.remove('service_img');
             rightImage.classList.remove('service_img1');
             rightImage.classList.remove('service_img2');

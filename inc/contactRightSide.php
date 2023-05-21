@@ -13,7 +13,7 @@
         <div class="x__content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="col-md-7 col-sm-12 col-xs-12">
                 <div class="Card__container">
                   <div class="contact__form__container" id="">
                     <div class="card">
@@ -56,7 +56,7 @@
               </div>
 
               <!-- imgae -->
-              <div class="col-md-4 col-sm-12 col-xs-12 m-0 p-0">
+              <div class="col-md-5 col-sm-12 col-xs-12 m-0 p-0">
                 <div class="rightImage contactImage">
 
                   <!-- contact form -->

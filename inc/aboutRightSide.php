@@ -19,8 +19,8 @@
                       <h1>about us</h1>
                     </div>
                     <div class="card-body">
-                      <h2 class="card-title fw-bolder fs-3">Who We Are</h2>
-                      <p class="card-text"> <span style="border-left:4px solid #f79328; padding-left: 3px;">Kode Tiger</span> is a premier Custom Software and Web Development Company with a strong footing in the Software Development industry. We're known for our expertise in Agile Development and our unwavering commitment to our Clients.</p>
+                      <h2 class="card-title fw-bolder fs-3"><span style="border-left:4px solid #f79328; padding-left: 3px;">Who We Are</span></h2>
+                      <p class="card-text">Kode Tiger is a premier Custom Software and Web Development Company with a strong footing in the Software Development industry. We're known for our expertise in Agile Development and our unwavering commitment to our Clients.</p>
 
                       <h2 class="card-title fw-bolder fs-3">Our Approach</h2>
                       <p class="card-text">We pride ourselves on being a Customer Friendly company that listens, understands, and delivers. Our approach has enabled us to provide tailored software solutions that fit each business's unique needs.</p>

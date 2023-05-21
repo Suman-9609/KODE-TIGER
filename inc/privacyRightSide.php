@@ -12,15 +12,15 @@
         <div class="x__content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="col-md-7 col-sm-12 col-xs-12">
                 <div class="Card__container">
                   <div class="card privacy__card">
                     <div class="card-head">
-                      <h2>privacy policy</h2>
+                      <h1>privacy policy</h1>
                     </div>
                     <div class="card-body">
                       <p class="card-text">
-                        Kode Tiger ("we", "us", or "our") operates the Kode Tiger Software Development Company website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+                      <span style="border-left:4px solid #f79328; padding-left: 3px;">Kode Tiger </span>("we", "us", or "our") operates the Kode Tiger Software Development Company website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service. We will not use or share your information with anyone except as described in this Privacy Policy.
                       </p>
                       <p class="card-text">
                         We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
@@ -74,7 +74,7 @@
               </div>
 
               <!-- imgae -->
-              <div class="col-md-4 col-sm-12 col-xs-12 m-0 p-0">
+              <div class="col-md-5 col-sm-12 col-xs-12 m-0 p-0">
                 <div class="rightImage">
 
                   <!-- contact form -->
