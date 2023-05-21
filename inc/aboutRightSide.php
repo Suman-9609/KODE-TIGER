@@ -1,11 +1,6 @@
         <!-- SOCIAL LINKS -->
-        <div class="desktop__social__icon">
-          <a href="mailto:contact@kodetiger.io"><i class="fa fa-envelope"></i></a>
-          <a href="https://wa.me/0000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/kodetiger/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.facebook.com/kodetiger" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
 
+        <?php include('desktopSocial.php') ?>
 
         <!-- contact btn displayer -->
         <div class="contact__btn__container" id="aboutContact">
@@ -17,28 +12,41 @@
         <div class="x__content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="col-md-7 col-sm-12 col-xs-12">
                 <div class="Card__container">
                   <div class="card about__card">
                     <div class="card-head">
-                      <h2>about us</h2>
+                      <h1>about us</h1>
                     </div>
                     <div class="card-body">
-                      <p class="card-text"> <span style="border-left:4px solid #f79328; padding-left: 3px;">Kode Tiger</span> is a cutting-edge software development and technology solutions provider founded in 2020, dedicated to transforming businesses by delivering innovative and efficient digital solutions. Our team of highly skilled and experienced professionals has a passion for technology and a commitment to client success, ensuring seamless integration and exceptional results for businesses of all sizes.</p>
-                      <p class="card-text">At Kode Tiger, we specialize in web development, mobile application development, SEO, custom software solutions tailored to meet the unique needs of our diverse clientele. Our mission is to empower businesses by harnessing the potential of technology to streamline operations, enhance customer engagement, and drive growth.</p>
-                      <p class="card-text">
-                        Our core values emphasize quality, integrity, and innovation, guiding our approach to every project. We are proud of our track record of consistently exceeding client expectations by delivering customized solutions that surpass industry standards. With our forward-thinking strategies, adaptive methodologies, and dedication to continuous improvement, Kode Tiger has become a trusted partner for businesses across various industries, including healthcare, finance, education, and e-commerce.
+                      <h2 class="card-title fw-bolder fs-3">Who We Are</h2>
+                      <p class="card-text"> <span style="border-left:4px solid #f79328; padding-left: 3px;">Kode Tiger</span> is a premier Custom Software and Web Development Company with a strong footing in the Software Development industry. We're known for our expertise in Agile Development and our unwavering commitment to our Clients.</p>
+
+                      <h2 class="card-title fw-bolder fs-3">Our Approach</h2>
+                      <p class="card-text">We pride ourselves on being a Customer Friendly company that listens, understands, and delivers. Our approach has enabled us to provide tailored software solutions that fit each business's unique needs.</p>
+
+                      <h2 class="card-title fw-bolder fs-3">Our Expertise</h2>
+                      <p class="card-text">Our passion and proficiency extend to various areas:
+                      <ul>
+                        <li><b>Custom Software Development: </b> We excel at transforming business processes through our robust, user-friendly, and efficient software solutions.</li>
+                        <li><b>Custom Web Development: </b> We design visually appealing, SEO-optimized, and engaging websites that convert visitors into loyal customers.</li>
+                        <li><b>Digital Marketing: </b> Our comprehensive strategies are tailored to increase your online presence, generate leads, and drive sales.</li>
+                      </ul>
                       </p>
-                      <span id="">
-                        <p class="card-text">We recognize the importance of staying at the forefront of the rapidly evolving technological landscape, which is why we invest heavily in research and development. By doing so, Kode Tiger remains a pioneer in emerging technologies, continually pushing the boundaries of what's possible in the digital realm. Our focus on customer satisfaction and long-term success has garnered numerous accolades, solidifying our reputation as a reliable and innovative technology partner.</p>
-                      </span>
+
+                      <h2 class="card-title fw-bolder fs-3">Why Choose Kode Tiger</h2>
+                      <p class="card-text">We're more than just a service provider; we're your partner in growth. Our team of experts works closely with you, offering guidance and support at every step. We're committed to helping you achieve your business goals, delivering solutions that exceed your expectations.</p>
+
+                      <h2 class="card-title fw-bolder fs-3">Contact Us</h2>
+                      <p class="card-text">Come on board with Kode Tiger, your go-to Custom Software and Web Development Company. Take advantage of our agile and personalized solutions crafted just for your business. Don't wait, reach out to us today, and let's work together to skyrocket your business to unprecedented heights.</p>
+
                     </div>
                   </div>
                 </div>
               </div>
 
               <!-- imgae -->
-              <div class="col-md-4 col-sm-12 col-xs-12 m-0 p-0">
+              <div class="col-md-5 col-sm-12 col-xs-12 m-0 p-0">
                 <div class="rightImage">
 
                   <!-- contact form -->

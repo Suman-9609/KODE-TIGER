@@ -211,7 +211,8 @@ html {
 .desktop__social__icon {
   position: fixed;
   top: 2rem;
-  right: 35%;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 600;
 }
 .desktop__social__icon a {
@@ -614,7 +615,7 @@ html {
   border: none;
   background-color: transparent;
 }
-.Card__container .card .card-head h2 {
+.Card__container .card .card-head h1 {
   font-family: "Bebas Neue";
   font-size: 2.6rem;
   text-transform: uppercase;
@@ -681,12 +682,12 @@ html {
   z-index: 1;
 }
 .rightImage .contact__form {
-  width: 80%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
   transform: translateX(120%);
   padding-top: 10rem;
-  padding-left: 5rem;
+  padding-left: 8rem;
   transition: all 0.5s ease-in-out;
 }
 .rightImage .contact__form .card {
@@ -765,7 +766,7 @@ html {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .rightImage .contact__form.showaboutForm {
-  transform: translateX(0%);
+  transform: translateX(10%);
 }
 
 @media only screen and (max-width: 768px) {

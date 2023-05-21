@@ -1,8 +1,8 @@
 const activePage = window.location.pathname;
-console.log(activePage);
+const baseUrl = "/kodetiger/"
 
 
-if (activePage === '/KODE-TIGER/about.php') {
+if (activePage === baseUrl+'about.php') {
     const icon1 = document.getElementById('sideIcon1');
     const icon2 = document.getElementById('sideIcon2');
     const icon3 = document.getElementById('sideIcon3');
@@ -17,7 +17,7 @@ if (activePage === '/KODE-TIGER/about.php') {
     icon4.classList.add('fa-regular');
 }
 
-if (activePage === '/KODE-TIGER/service.php') {
+if (activePage ===  baseUrl+'service.php') {
     const icon1 = document.getElementById('sideIcon1');
     const icon2 = document.getElementById('sideIcon2');
     const icon3 = document.getElementById('sideIcon3');
@@ -32,7 +32,7 @@ if (activePage === '/KODE-TIGER/service.php') {
     icon4.classList.add('fa-regular');
 }
 
-if (activePage === '/KODE-TIGER/blog.php') {
+if (activePage ===  baseUrl+'blog.php') {
     const icon1 = document.getElementById('sideIcon1');
     const icon2 = document.getElementById('sideIcon2');
     const icon3 = document.getElementById('sideIcon3');
@@ -48,7 +48,7 @@ if (activePage === '/KODE-TIGER/blog.php') {
 }
 
 
-if (activePage === '/KODE-TIGER/contact.php') {
+if (activePage === baseUrl+'contact.php') {
     const icon1 = document.getElementById('sideIcon1');
     const icon2 = document.getElementById('sideIcon2');
     const icon3 = document.getElementById('sideIcon3');
